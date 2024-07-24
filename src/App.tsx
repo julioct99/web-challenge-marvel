@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 
 import PageLayout from './layout/PageLayout/PageLayout'
 import CharacterList from './pages/CharacterList/CharacterList'
@@ -6,29 +6,27 @@ import CharacterDetail from './pages/CharacterDetail/CharacterDetail'
 import CharactersContextProvider from './context/characters'
 import CharacterContextProvider from './context/character'
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: (
-      <CharactersContextProvider>
-        <CharacterList />
-      </CharactersContextProvider>
-    ),
-  },
-  {
-    path: '/characters/:id',
-    element: (
-      <CharacterContextProvider>
-        <CharacterDetail />
-      </CharacterContextProvider>
-    ),
-  },
-])
-
 function App() {
   return (
     <PageLayout>
-      <RouterProvider router={router} />
+      <Routes>
+        <Route
+          path='/'
+          element={
+            <CharactersContextProvider>
+              <CharacterList />
+            </CharactersContextProvider>
+          }
+        />
+        <Route
+          path='/characters/:id'
+          element={
+            <CharacterContextProvider>
+              <CharacterDetail />
+            </CharacterContextProvider>
+          }
+        />
+      </Routes>
     </PageLayout>
   )
 }
