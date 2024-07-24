@@ -1,11 +1,14 @@
+import CharactersContextProvider from './context/characters'
 import PageLayout from './layout/PageLayout/PageLayout'
 import CharacterList from './pages/CharacterList'
 
 function App() {
   return (
-    <PageLayout>
-      <CharacterList />
-    </PageLayout>
+    <CharactersContextProvider>
+      <PageLayout>
+        <CharacterList />
+      </PageLayout>
+    </CharactersContextProvider>
   )
 }
 

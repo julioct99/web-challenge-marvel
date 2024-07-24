@@ -1,13 +1,15 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 
 import CharacterCard from '../components/CharacterCard/CharacterCard'
 import Searchbar from '../components/Searchbar/Searchbar'
 import Grid from '../layout/Grid/Grid'
 
 import { fetchCharacters } from '../shared/api/fetchers'
+import { CharactersContext } from '../context/characters'
 
 const CharacterList = () => {
   const [loading, setLoading] = useState(false)
+  const { characters, setCharacters } = useContext(CharactersContext)
 
   useEffect(() => {
     loadCharacters()
@@ -17,7 +19,7 @@ const CharacterList = () => {
     setLoading(true)
     try {
       const characters = await fetchCharacters()
-      console.log({ characters })
+      setCharacters(characters.data.results)
     } finally {
       setLoading(false)
     }
@@ -30,15 +32,9 @@ const CharacterList = () => {
 
     return (
       <Grid>
-        <CharacterCard character={{ name: '1' }} />
-        <CharacterCard character={{ name: '2' }} />
-        <CharacterCard character={{ name: '3' }} />
-        <CharacterCard character={{ name: '4' }} />
-        <CharacterCard character={{ name: '5' }} />
-        <CharacterCard character={{ name: '6' }} />
-        <CharacterCard character={{ name: '7' }} />
-        <CharacterCard character={{ name: '8' }} />
-        <CharacterCard character={{ name: '9' }} />
+        {characters.map((character) => (
+          <CharacterCard key={character.id} character={character} />
+        ))}
       </Grid>
     )
   }

@@ -1,24 +1,33 @@
 import styled from 'styled-components'
+import { Character } from '../../shared/types/marvel-api'
 
 interface CharacterCardProps {
-  character: any
+  character: Character
 }
 
 const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 10px;
   align-items: space-between;
-  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
 `
 
+const CardBody = styled.div`
+  padding: 10px;
+`
+
 const CharacterCard: React.FunctionComponent<CharacterCardProps> = ({ character }) => {
+  const thumbnail = `${character.thumbnail.path}.${character.thumbnail.extension}`
+
   return (
     <CardContainer>
-      <img width='100%' src='https://placehold.co/200' alt='Placeholder' />
-      <span>Name</span>
+      <img width='100%' src={thumbnail} alt='Placeholder' />
+      <CardBody>
+        <span>{character.name}</span>
+      </CardBody>
     </CardContainer>
   )
 }
