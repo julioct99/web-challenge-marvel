@@ -6,6 +6,7 @@ import Grid from '../../layout/Grid/Grid'
 
 import { fetchCharacters } from '../../shared/api/fetchers'
 import { CharactersContext } from '../../context/characters'
+import PageContent from '../../layout/PageLayout/PageContent/PageContent'
 
 const CharacterList = () => {
   const [loading, setLoading] = useState(false)
@@ -40,11 +41,11 @@ const CharacterList = () => {
   }
 
   return (
-    <div>
+    <PageContent>
       <h1>Character List</h1>
       <Searchbar />
       {renderContent()}
-    </div>
+    </PageContent>
   )
 }
 
