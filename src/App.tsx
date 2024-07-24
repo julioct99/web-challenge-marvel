@@ -1,5 +1,12 @@
+import PageLayout from './layout/PageLayout/PageLayout'
+import CharacterList from './pages/CharacterList'
+
 function App() {
-  return <h1>Hello world</h1>
+  return (
+    <PageLayout>
+      <CharacterList />
+    </PageLayout>
+  )
 }
 
 export default App
