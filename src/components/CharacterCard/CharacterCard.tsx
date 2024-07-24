@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Character } from '../../shared/types/marvel-api'
+import { Link } from 'react-router-dom'
 
 interface CharacterCardProps {
   character: Character
@@ -23,12 +24,17 @@ const CharacterCard: React.FunctionComponent<CharacterCardProps> = ({ character 
   const thumbnail = `${character.thumbnail.path}.${character.thumbnail.extension}`
 
   return (
-    <CardContainer>
-      <img width='100%' src={thumbnail} alt='Placeholder' />
-      <CardBody>
-        <span>{character.name}</span>
-      </CardBody>
-    </CardContainer>
+    <Link
+      to={`/characters/${character.id}`}
+      style={{ textDecoration: 'none', color: 'inherit' }}
+    >
+      <CardContainer>
+        <img width='100%' src={thumbnail} alt='Placeholder' />
+        <CardBody>
+          <span>{character.name}</span>
+        </CardBody>
+      </CardContainer>
+    </Link>
   )
 }
 

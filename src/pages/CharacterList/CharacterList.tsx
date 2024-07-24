@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from 'react'
 
-import CharacterCard from '../components/CharacterCard/CharacterCard'
-import Searchbar from '../components/Searchbar/Searchbar'
-import Grid from '../layout/Grid/Grid'
+import CharacterCard from '../../components/CharacterCard/CharacterCard'
+import Searchbar from '../../components/Searchbar/Searchbar'
+import Grid from '../../layout/Grid/Grid'
 
-import { fetchCharacters } from '../shared/api/fetchers'
-import { CharactersContext } from '../context/characters'
+import { fetchCharacters } from '../../shared/api/fetchers'
+import { CharactersContext } from '../../context/characters'
 
 const CharacterList = () => {
   const [loading, setLoading] = useState(false)
