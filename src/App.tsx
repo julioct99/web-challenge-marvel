@@ -1,27 +1,35 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import CharactersContextProvider from './context/characters'
+
 import PageLayout from './layout/PageLayout/PageLayout'
 import CharacterList from './pages/CharacterList/CharacterList'
 import CharacterDetail from './pages/CharacterDetail/CharacterDetail'
+import CharactersContextProvider from './context/characters'
+import CharacterContextProvider from './context/character'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <CharacterList />,
+    element: (
+      <CharactersContextProvider>
+        <CharacterList />
+      </CharactersContextProvider>
+    ),
   },
   {
     path: '/characters/:id',
-    element: <CharacterDetail />,
+    element: (
+      <CharacterContextProvider>
+        <CharacterDetail />
+      </CharacterContextProvider>
+    ),
   },
 ])
 
 function App() {
   return (
-    <CharactersContextProvider>
-      <PageLayout>
-        <RouterProvider router={router} />
-      </PageLayout>
-    </CharactersContextProvider>
+    <PageLayout>
+      <RouterProvider router={router} />
+    </PageLayout>
   )
 }
 

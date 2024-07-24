@@ -4,7 +4,7 @@ import { Character } from '../shared/types/marvel-api'
 
 interface CharacterContext {
   characters: Character[]
-  setCharacters: (characters: Character[]) => void
+  setCharacters: React.Dispatch<React.SetStateAction<Character[]>>
 }
 
 export const CharactersContext = createContext<CharacterContext>({

@@ -4023,3 +4023,99 @@ export const FAKE_LIST_RESPONSE: MarvelApiResponse = {
     ],
   },
 }
+
+export const FAKE_DETAIL_RESPONSE = {
+  code: 200,
+  status: 'Ok',
+  copyright: '© 2024 MARVEL',
+  attributionText: 'Data provided by Marvel. © 2024 MARVEL',
+  attributionHTML:
+    '<a href="http://marvel.com">Data provided by Marvel. © 2024 MARVEL</a>',
+  etag: '5468f3c771e1c5947bd1691d809047c80d1110e3',
+  data: {
+    offset: 0,
+    limit: 20,
+    total: 1,
+    count: 1,
+    results: [
+      {
+        id: 1009173,
+        name: 'Battering Ram',
+        description: '',
+        modified: '1969-12-31T19:00:00-0500',
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/f/60/4c002e0305708',
+          extension: 'gif',
+        },
+        resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009173',
+        comics: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009173/comics',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/comics/17961',
+              name: 'X-Force (1991) #116',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/comics/1028',
+              name: 'X-Force: Famous, Mutant & Mortal (Trade Paperback)',
+            },
+          ],
+          returned: 2,
+        },
+        series: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009173/series',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/series/3633',
+              name: 'X-Force (1991 - 2004)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/series/88',
+              name: 'X-Force: Famous, Mutant & Mortal (2003)',
+            },
+          ],
+          returned: 2,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009173/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/38198',
+              name: 'Cover #38198',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/38199',
+              name: 'Exit Wounds',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009173/events',
+          items: [],
+          returned: 0,
+        },
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/characters/2685/battering_ram?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'wiki',
+            url: 'http://marvel.com/universe/Battering_Ram?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'comiclink',
+            url: 'http://marvel.com/comics/characters/1009173/battering_ram?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+      },
+    ],
+  },
+}

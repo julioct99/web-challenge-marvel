@@ -13,10 +13,10 @@ export interface Data {
   limit: number
   total: number
   count: number
-  results: ApiResource[]
+  results: ApiResult
 }
 
-export type ApiResource = Character
+export type ApiResult = Character[]
 
 export interface Character {
   id: number
