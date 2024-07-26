@@ -48,8 +48,7 @@ const CharacterList = () => {
 
   return (
     <PageContent>
-      <h1>Character List</h1>
-      <Searchbar onSearch={handleSearch} />
+      <Searchbar onSearch={handleSearch} placeholder='Search a character...' />
       {renderContent()}
     </PageContent>
   )

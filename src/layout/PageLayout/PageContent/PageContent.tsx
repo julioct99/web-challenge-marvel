@@ -3,7 +3,7 @@ interface PageContentProps {
 }
 
 const PageContent: React.FunctionComponent<PageContentProps> = ({ children }) => {
-  return <div style={{ padding: '16px 64px' }}>{children}</div>
+  return <div style={{ padding: 64 }}>{children}</div>
 }
 
 export default PageContent

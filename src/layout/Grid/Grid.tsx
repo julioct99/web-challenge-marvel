@@ -4,16 +4,20 @@ const GridContainer = styled.div`
   display: grid;
   gap: 20px;
 
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(7, 1fr); /* 7 columns on PC */
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(7, 1fr);
   }
 
-  @media (min-width: 768px) and (max-width: 1023px) {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns on tablet */
+  @media (min-width: 768px) and (max-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   @media (max-width: 767px) {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 479px) {
+    grid-template-columns: 1fr;
   }
 `
 

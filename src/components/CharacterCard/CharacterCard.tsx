@@ -20,6 +20,14 @@ const CardBody = styled.div`
   padding: 10px;
 `
 
+const Thumbnail = styled.img`
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+`
+
 const CharacterCard: React.FunctionComponent<CharacterCardProps> = ({ character }) => {
   const thumbnail = `${character.thumbnail.path}.${character.thumbnail.extension}`
 
@@ -29,7 +37,7 @@ const CharacterCard: React.FunctionComponent<CharacterCardProps> = ({ character 
       style={{ textDecoration: 'none', color: 'inherit' }}
     >
       <CardContainer>
-        <img width='100%' src={thumbnail} alt='Placeholder' />
+        <Thumbnail src={thumbnail} alt={character.name} />
         <CardBody>
           <span>{character.name}</span>
         </CardBody>
