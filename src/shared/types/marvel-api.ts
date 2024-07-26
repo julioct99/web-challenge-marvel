@@ -16,7 +16,7 @@ export interface Data {
   results: ApiResult
 }
 
-export type ApiResult = Character[]
+export type ApiResult = Character[] | Comic[]
 
 export interface Character {
   id: number
@@ -25,11 +25,29 @@ export interface Character {
   modified: string
   thumbnail: Thumbnail
   resourceURI: string
-  comics: Comics
+  comics: CharacterComics
   series: Series
   stories: Stories
   events: Events
   urls: Url[]
+}
+
+export interface Comic {
+  id: number
+  digitalId: number
+  title: string
+  issueNumber: number
+  variantDescription: string
+  description: string
+  modified: string
+  isbn: string
+  upc: string
+  diamondCode: string
+  ean: string
+  issn: string
+  format: string
+  pageCount: number
+  thumbnail: Thumbnail
 }
 
 export interface Thumbnail {
@@ -37,14 +55,14 @@ export interface Thumbnail {
   extension: string
 }
 
-export interface Comics {
+export interface CharacterComics {
   available: number
   collectionURI: string
-  items: Comic[]
+  items: CharacterComic[]
   returned: number
 }
 
-export interface Comic {
+export interface CharacterComic {
   resourceURI: string
   name: string
 }

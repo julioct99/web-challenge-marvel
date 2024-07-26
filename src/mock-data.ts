@@ -4119,3 +4119,3198 @@ export const FAKE_DETAIL_RESPONSE = {
     ],
   },
 }
+
+export const FAKE_COMIC_LIST_RESPONSE = {
+  code: 200,
+  status: 'Ok',
+  copyright: '© 2024 MARVEL',
+  attributionText: 'Data provided by Marvel. © 2024 MARVEL',
+  attributionHTML:
+    '<a href="http://marvel.com">Data provided by Marvel. © 2024 MARVEL</a>',
+  etag: '7ed4fb0c528545cc628e90cb78045f92994c99cf',
+  data: {
+    offset: 0,
+    limit: 20,
+    total: 21,
+    count: 20,
+    results: [
+      {
+        id: 57327,
+        digitalId: 40695,
+        title: 'Web Warriors (2015) #2',
+        issueNumber: 2,
+        variantDescription: '',
+        description:
+          "SPIDER-GWEN STRANDED! Without her interdimensional timepiece to get her home, Gwen Stacy (AKA Spider-Woman) has no choice but to sit tight and wait to be rescued by the rest of the Web Warriors. Everyone's favorite hoodie-wearing hero isn't exactly a damsel in distress, though, is she?",
+        modified: '2015-12-14T20:52:22-0500',
+        isbn: '',
+        upc: '759606083641000211',
+        diamondCode: 'OCT150873',
+        ean: '',
+        issn: '',
+        format: 'Comic',
+        pageCount: 32,
+        textObjects: [
+          {
+            type: 'issue_solicit_text',
+            language: 'en-us',
+            text: '• SPIDER-GWEN STRANDED! Without her interdimensional timepiece to get her home, Gwen Stacy (AKA Spider-Woman) has no choice but to sit tight and wait to be rescued by the rest of the Web Warriors.\n• Everyone’s favorite hoodie-wearing hero isn’t exactly a damsel in distress, though, is she?',
+          },
+        ],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/57327',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/57327/web_warriors_2015_2?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'purchase',
+            url: 'http://comicstore.marvel.com/Web-Warriors-2/digital-comic/40695?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=40695&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'inAppLink',
+            url: 'https://applink.marvel.com/issue/40695?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/20900',
+          name: 'Web Warriors (2015 - 2016)',
+        },
+        variants: [],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2015-12-16T00:00:00-0500',
+          },
+          {
+            type: 'focDate',
+            date: '2015-12-01T00:00:00-0500',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2016-06-20T00:00:00-0400',
+          },
+          {
+            type: 'digitalPurchaseDate',
+            date: '2015-12-16T00:00:00-0500',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 3.99,
+          },
+          {
+            type: 'digitalPurchasePrice',
+            price: 3.99,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/7/50/5654da289d6f8',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/7/50/5654da289d6f8',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 3,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57327/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/9799',
+              name: 'David Baldeon',
+              role: 'artist',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12452',
+              name: 'Mike Costa',
+              role: 'writer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/11488',
+              name: 'Julian Totino Tedesco',
+              role: 'penciller (cover)',
+            },
+          ],
+          returned: 3,
+        },
+        characters: {
+          available: 5,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57327/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009157',
+              name: 'Spider-Girl (Anya Corazon)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009609',
+              name: 'Spider-Girl (May Parker)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1017603',
+              name: 'Spider-Gwen (Gwen Stacy)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1011347',
+              name: 'Spider-Ham (Larval Earth)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+          ],
+          returned: 5,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57327/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/125471',
+              name: 'cover from Web Warriors (2015) #2',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/125472',
+              name: 'story from Web Warriors (2015) #2',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57327/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 57328,
+        digitalId: 40867,
+        title: 'Web Warriors (2015) #3',
+        issueNumber: 3,
+        variantDescription: '',
+        description:
+          "Electro's amassed an army of alternate-reality evildoers! Fortunately, there's a team of heroes from across the SPIDER-VERSE who are ready to stop 'em! Featuring an ending that's sure to SHOCK you!",
+        modified: '2016-01-08T17:21:16-0500',
+        isbn: '',
+        upc: '759606083641000311',
+        diamondCode: 'NOV150830',
+        ean: '',
+        issn: '',
+        format: 'Comic',
+        pageCount: 32,
+        textObjects: [
+          {
+            type: 'issue_solicit_text',
+            language: 'en-us',
+            text: "Electro's amassed an army of alternate-reality evildoers! Fortunately, there's a team of heroes from across the SPIDER-VERSE who are ready to stop 'em! Featuring an ending that's sure to SHOCK you!",
+          },
+        ],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/57328',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/57328/web_warriors_2015_3?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'purchase',
+            url: 'http://comicstore.marvel.com/Web-Warriors-3/digital-comic/40867?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=40867&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'inAppLink',
+            url: 'https://applink.marvel.com/issue/40867?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/20900',
+          name: 'Web Warriors (2015 - 2016)',
+        },
+        variants: [],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2016-01-13T00:00:00-0500',
+          },
+          {
+            type: 'focDate',
+            date: '2015-12-14T00:00:00-0500',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2016-07-18T00:00:00-0400',
+          },
+          {
+            type: 'digitalPurchaseDate',
+            date: '2016-01-13T00:00:00-0500',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 3.99,
+          },
+          {
+            type: 'digitalPurchasePrice',
+            price: 3.99,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/3/10/567ac6203833a',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/3/10/567ac6203833a',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 10,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57328/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/9799',
+              name: 'David Baldeon',
+              role: 'penciler',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/5251',
+              name: 'Vc Joe Caramagna',
+              role: 'letterer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12452',
+              name: 'Mike Costa',
+              role: 'writer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/8028',
+              name: 'Andrew Crossley',
+              role: 'colorist',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/426',
+              name: 'Jason Keith',
+              role: 'colorist',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12457',
+              name: 'Edward Devin Lewis',
+              role: 'editor',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/497',
+              name: 'John Livesay',
+              role: 'inker',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/447',
+              name: 'Victor Olazaba',
+              role: 'inker',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/4074',
+              name: 'Walden Wong',
+              role: 'inker',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/13221',
+              name: 'Julian Totino Tedesco',
+              role: 'penciler (cover)',
+            },
+          ],
+          returned: 10,
+        },
+        characters: {
+          available: 5,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57328/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009157',
+              name: 'Spider-Girl (Anya Corazon)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009609',
+              name: 'Spider-Girl (May Parker)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1017603',
+              name: 'Spider-Gwen (Gwen Stacy)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1011347',
+              name: 'Spider-Ham (Larval Earth)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+          ],
+          returned: 5,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57328/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/125473',
+              name: 'cover from Web Warriors (2015) #3',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/125474',
+              name: 'story from Web Warriors (2015) #3',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57328/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 57329,
+        digitalId: 41198,
+        title: 'Web Warriors (2015) #4',
+        issueNumber: 4,
+        variantDescription: '',
+        description: '',
+        modified: '2016-01-25T09:11:40-0500',
+        isbn: '',
+        upc: '759606083641000411',
+        diamondCode: 'DEC150815',
+        ean: '',
+        issn: '',
+        format: 'Comic',
+        pageCount: 32,
+        textObjects: [
+          {
+            type: 'issue_solicit_text',
+            language: 'en-us',
+            text: 'The WEB-WARRIORS have to call in backup after the Electros launch an all-out siege on Earth-001! Featuring two titanic guest stars straight out of SPIDER-VERSE!',
+          },
+        ],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/57329',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/57329/web_warriors_2015_4?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'purchase',
+            url: 'http://comicstore.marvel.com/Web-Warriors-4/digital-comic/41198?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=41198&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/20900',
+          name: 'Web Warriors (2015 - 2016)',
+        },
+        variants: [],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2016-02-17T00:00:00-0500',
+          },
+          {
+            type: 'focDate',
+            date: '2016-02-03T00:00:00-0500',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2016-08-15T00:00:00-0400',
+          },
+          {
+            type: 'digitalPurchaseDate',
+            date: '2016-02-16T11:19:00-0500',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 3.99,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/9/d0/56af7193cb65f',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/9/d0/56af7193cb65f',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 8,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57329/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/9799',
+              name: 'David Baldeon',
+              role: 'penciller',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/5251',
+              name: 'Vc Joe Caramagna',
+              role: 'letterer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12452',
+              name: 'Mike Costa',
+              role: 'writer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/428',
+              name: 'Antonio Fabela',
+              role: 'colorist',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12984',
+              name: 'Matt Yackey',
+              role: 'colorist',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12457',
+              name: 'Edward Devin Lewis',
+              role: 'editor',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/11488',
+              name: 'Julian Totino Tedesco',
+              role: 'penciller (cover)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/4074',
+              name: 'Walden Wong',
+              role: 'inker',
+            },
+          ],
+          returned: 8,
+        },
+        characters: {
+          available: 5,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57329/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009157',
+              name: 'Spider-Girl (Anya Corazon)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009609',
+              name: 'Spider-Girl (May Parker)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1017603',
+              name: 'Spider-Gwen (Gwen Stacy)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1011347',
+              name: 'Spider-Ham (Larval Earth)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+          ],
+          returned: 5,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57329/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/125475',
+              name: 'cover from Web Warriors (2015) #4',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/125476',
+              name: 'story from Web Warriors (2015) #4',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57329/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 57330,
+        digitalId: 41427,
+        title: 'Web Warriors (2015) #5',
+        issueNumber: 5,
+        variantDescription: '',
+        description:
+          'The epic conclusion of ELECTROVERSE arrives, and every Spider might not survive! The Electros have already invaded Earth-001, how could things get any worse? STEAMPUNK LADY SPIDER AND SPIDER-BEN guest star in an all-out brawl between the Web-Warriors and the Electros!',
+        modified: '2016-03-07T17:25:08-0500',
+        isbn: '',
+        upc: '759606083641000511',
+        diamondCode: 'JAN160857',
+        ean: '',
+        issn: '',
+        format: 'Comic',
+        pageCount: 32,
+        textObjects: [
+          {
+            type: 'issue_solicit_text',
+            language: 'en-us',
+            text: 'The epic conclusion of ELECTROVERSE arrives, and every Spider might not survive! The Electros have already invaded Earth-001, how could things get any worse? STEAMPUNK LADY SPIDER AND SPIDER-BEN guest star in an all-out brawl between the Web-Warriors and the Electros!',
+          },
+        ],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/57330',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/57330/web_warriors_2015_5?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'purchase',
+            url: 'http://comicstore.marvel.com/Web-Warriors-5/digital-comic/41427?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=41427&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/20900',
+          name: 'Web Warriors (2015 - 2016)',
+        },
+        variants: [],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2016-03-16T00:00:00-0400',
+          },
+          {
+            type: 'focDate',
+            date: '2016-03-02T00:00:00-0500',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2016-09-19T00:00:00-0400',
+          },
+          {
+            type: 'digitalPurchaseDate',
+            date: '2016-03-11T09:46:00-0500',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 3.99,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/6/70/56e333fae9431',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/6/70/56e333fae9431',
+            extension: 'jpg',
+          },
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/3/f0/569670326def3',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 4,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57330/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/9799',
+              name: 'David Baldeon',
+              role: 'penciller',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12452',
+              name: 'Mike Costa',
+              role: 'writer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12457',
+              name: 'Edward Devin Lewis',
+              role: 'editor',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/11488',
+              name: 'Julian Totino Tedesco',
+              role: 'penciller (cover)',
+            },
+          ],
+          returned: 4,
+        },
+        characters: {
+          available: 5,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57330/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009157',
+              name: 'Spider-Girl (Anya Corazon)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009609',
+              name: 'Spider-Girl (May Parker)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1017603',
+              name: 'Spider-Gwen (Gwen Stacy)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1011347',
+              name: 'Spider-Ham (Larval Earth)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+          ],
+          returned: 5,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57330/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/125477',
+              name: 'cover from Web Warriors (2015) #5',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/125478',
+              name: 'story from Web Warriors (2015) #5',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57330/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 57331,
+        digitalId: 41690,
+        title: 'Web Warriors (2015) #6',
+        issueNumber: 6,
+        variantDescription: '',
+        description:
+          "With the threat of the ELECTROVERSE sated (for now), what's an average day in the life of an interdimensional Spider-Man or Spider-Woman really like? Could it involve? MURDER?!",
+        modified: '2016-04-08T11:25:34-0400',
+        isbn: '',
+        upc: '759606083641000611',
+        diamondCode: 'FEB160795',
+        ean: '',
+        issn: '',
+        format: 'Comic',
+        pageCount: 32,
+        textObjects: [
+          {
+            type: 'issue_solicit_text',
+            language: 'en-us',
+            text: 'With the threat of the ELECTROVERSE sated (for now), what’s an average day in the life of an interdimensional Spider-Man or Spider-Woman really like? Could it involve… MURDER?!',
+          },
+        ],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/57331',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/57331/web_warriors_2015_6?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'purchase',
+            url: 'http://comicstore.marvel.com/Web-Warriors-6/digital-comic/41690?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=41690&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'inAppLink',
+            url: 'https://applink.marvel.com/issue/41690?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/20900',
+          name: 'Web Warriors (2015 - 2016)',
+        },
+        variants: [],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2016-04-13T00:00:00-0400',
+          },
+          {
+            type: 'focDate',
+            date: '2016-03-30T00:00:00-0400',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2016-10-17T00:00:00-0400',
+          },
+          {
+            type: 'digitalPurchaseDate',
+            date: '2016-04-13T00:00:00-0400',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 3.99,
+          },
+          {
+            type: 'digitalPurchasePrice',
+            price: 3.99,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/a/20/56fae57a1d879',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/a/20/56fae57a1d879',
+            extension: 'jpg',
+          },
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/6/30/56980f1a024ce',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 4,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57331/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/9799',
+              name: 'David Baldeon',
+              role: 'penciller',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12452',
+              name: 'Mike Costa',
+              role: 'writer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12457',
+              name: 'Edward Devin Lewis',
+              role: 'editor',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/11488',
+              name: 'Julian Totino Tedesco',
+              role: 'penciller (cover)',
+            },
+          ],
+          returned: 4,
+        },
+        characters: {
+          available: 5,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57331/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009157',
+              name: 'Spider-Girl (Anya Corazon)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009609',
+              name: 'Spider-Girl (May Parker)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1017603',
+              name: 'Spider-Gwen (Gwen Stacy)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1011347',
+              name: 'Spider-Ham (Larval Earth)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+          ],
+          returned: 5,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57331/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/125479',
+              name: 'cover from Web Warriors (2015) #6',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/125480',
+              name: 'story from Web Warriors (2015) #6',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57331/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 57333,
+        digitalId: 41839,
+        title: 'Web Warriors (2015) #8',
+        issueNumber: 8,
+        variantDescription: '',
+        description:
+          "The Web of Life and Destiny is damaged, and even worse - it's getting TANGLED! How are the Web Warriors supposed to repair REALITY ITSELF?! Join us for this insane web-hopping romp that features A GIANT SPIDER-MAN ROBOT FROM THE FURTHEST CORNER OF THE MULTIVERSE AS A GUEST STAR!",
+        modified: '2016-06-10T17:44:20-0400',
+        isbn: '',
+        upc: '759606083641000811',
+        diamondCode: 'APR160945',
+        ean: '',
+        issn: '',
+        format: 'Comic',
+        pageCount: 32,
+        textObjects: [
+          {
+            type: 'issue_solicit_text',
+            language: 'en-us',
+            text: 'The Web of Life and Destiny is damaged, and even worse – it’s getting TANGLED! How are the Web Warriors supposed to repair REALITY ITSELF?! Join us for this insane web-hopping romp that features A GIANT SPIDER-MAN ROBOT FROM THE FURTHEST CORNER OF THE MULTIVERSE AS A GUEST STAR!',
+          },
+        ],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/57333',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/57333/web_warriors_2015_8?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'purchase',
+            url: 'http://comicstore.marvel.com/Web-Warriors-8/digital-comic/41839?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=41839&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'inAppLink',
+            url: 'https://applink.marvel.com/issue/41839?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/20900',
+          name: 'Web Warriors (2015 - 2016)',
+        },
+        variants: [],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2016-06-22T00:00:00-0400',
+          },
+          {
+            type: 'focDate',
+            date: '2016-06-08T00:00:00-0400',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2016-12-26T00:00:00-0500',
+          },
+          {
+            type: 'digitalPurchaseDate',
+            date: '2016-06-22T00:00:00-0400',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 3.99,
+          },
+          {
+            type: 'digitalPurchasePrice',
+            price: 3.99,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/4/30/575b345f6792e',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/4/30/575b345f6792e',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 4,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57333/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/9799',
+              name: 'David Baldeon',
+              role: 'writer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12452',
+              name: 'Mike Costa',
+              role: 'writer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12457',
+              name: 'Edward Devin Lewis',
+              role: 'editor',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/11488',
+              name: 'Julian Totino Tedesco',
+              role: 'penciller (cover)',
+            },
+          ],
+          returned: 4,
+        },
+        characters: {
+          available: 5,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57333/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009157',
+              name: 'Spider-Girl (Anya Corazon)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009609',
+              name: 'Spider-Girl (May Parker)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1017603',
+              name: 'Spider-Gwen (Gwen Stacy)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1011347',
+              name: 'Spider-Ham (Larval Earth)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+          ],
+          returned: 5,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57333/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/125483',
+              name: 'cover from Web Warriors (2015) #8',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/125484',
+              name: 'story from Web Warriors (2015) #8',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57333/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 71521,
+        digitalId: 0,
+        title: 'Marvel Universe Ultimate Spider-Man: Spider-Verse (2018) #3',
+        issueNumber: 3,
+        variantDescription: '',
+        description:
+          'Introducing Spider-Man Noir! Spidey’s multiverse battle against Green Goblin continues, this time taking him to the dark and moody world of Marvel’s Noir universe!',
+        modified: '2018-05-30T16:50:29-0400',
+        isbn: '',
+        upc: '',
+        diamondCode: '',
+        ean: '',
+        issn: '',
+        format: 'Infinite Comic',
+        pageCount: 12,
+        textObjects: [
+          {
+            type: 'issue_solicit_text',
+            language: 'en-us',
+            text: 'Introducing Spider-Man Noir! Spidey’s multiverse battle against Green Goblin continues, this time taking him to the dark and moody world of Marvel’s Noir universe!',
+          },
+        ],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/71521',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/71521/marvel_universe_ultimate_spider-man_spider-verse_2018_3?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/26066',
+          name: 'Marvel Universe Ultimate Spider-Man: Spider-Verse (2018)',
+        },
+        variants: [],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2018-06-05T00:00:00-0400',
+          },
+          {
+            type: 'focDate',
+            date: '-0001-11-30T00:00:00-0500',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 0,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/9/c0/5b0f0dfd93686',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/9/c0/5b0f0dfd93686',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/71521/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/11401',
+              name: 'Various',
+              role: 'penciller (cover)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/5251',
+              name: 'Vc Joe Caramagna',
+              role: 'writer',
+            },
+          ],
+          returned: 2,
+        },
+        characters: {
+          available: 3,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/71521/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1011435',
+              name: 'Green Goblin (Norman Osborn)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009610',
+              name: 'Spider-Man (Peter Parker)',
+            },
+          ],
+          returned: 3,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/71521/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/159018',
+              name: 'cover from Marvel Universe Ultimate Spider-Man: Spider-Verse Infinite Comic (2018) #3',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/159019',
+              name: 'story from Marvel Universe Ultimate Spider-Man: Spider-Verse Infinite Comic (2018) #3',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/71521/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 57325,
+        digitalId: 40475,
+        title: 'Web Warriors (2015) #1',
+        issueNumber: 1,
+        variantDescription: '',
+        description:
+          "All of your favorite web-slinging wonders from SPIDER-VERSE, together in one place! It's high-stakes action when ELECTRO threatens all of reality! From their base on Earth-001, it's up to SPIDER-GWEN, SPIDER-MAN NOIR, SPIDER-MAN INDIA, SPIDER-UK, SPIDER-HAM and a TON of other surprise spider-guest stars to stop him!",
+        modified: '2018-11-27T10:06:52-0500',
+        isbn: '',
+        upc: '759606083641000111',
+        diamondCode: 'SEP150677',
+        ean: '',
+        issn: '',
+        format: 'Comic',
+        pageCount: 40,
+        textObjects: [
+          {
+            type: 'issue_solicit_text',
+            language: 'en-us',
+            text: 'All of your favorite web-slinging wonders from SPIDER-VERSE, together in one place! It’s high-stakes action when ELECTRO threatens all of reality! From their base on Earth-001, it’s up to SPIDER-GWEN, SPIDER-MAN NOIR, SPIDER-MAN INDIA, SPIDER-UK, SPIDER-HAM and a TON of other surprise spider-guest stars to stop him!',
+          },
+        ],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/57325',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/57325/web_warriors_2015_1?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'purchase',
+            url: 'http://comicstore.marvel.com/Web-Warriors-1/digital-comic/40475?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=40475&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'inAppLink',
+            url: 'https://applink.marvel.com/issue/40475?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/20900',
+          name: 'Web Warriors (2015 - 2016)',
+        },
+        variants: [
+          {
+            resourceURI: 'http://gateway.marvel.com/v1/public/comics/57326',
+            name: 'Web Warriors (2015) #1 (Scott Hip-&#8203;Hop Variant)',
+          },
+        ],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2015-11-11T00:00:00-0500',
+          },
+          {
+            type: 'focDate',
+            date: '2015-10-27T00:00:00-0400',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2016-05-16T00:00:00-0400',
+          },
+          {
+            type: 'digitalPurchaseDate',
+            date: '2015-11-18T00:00:00-0500',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 4.99,
+          },
+          {
+            type: 'digitalPurchasePrice',
+            price: 4.99,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/1/03/5640d51845c21',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/1/03/5640d51845c21',
+            extension: 'jpg',
+          },
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/1/40/5626660be8849',
+            extension: 'jpg',
+          },
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/a/c0/5626654118528',
+            extension: 'jpg',
+          },
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/9/20/562664dd2c0cd',
+            extension: 'jpg',
+          },
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/9/90/561d64fda18b8',
+            extension: 'jpg',
+          },
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/6/40/561d64d47d00f',
+            extension: 'jpg',
+          },
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/6/60/561d64a96b40e',
+            extension: 'jpg',
+          },
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/e/f0/561d647986859',
+            extension: 'jpg',
+          },
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/c/03/561d643f15765',
+            extension: 'jpg',
+          },
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/6/00/560179a302dcf',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 3,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57325/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/9799',
+              name: 'David Baldeon',
+              role: 'artist',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12452',
+              name: 'Mike Costa',
+              role: 'writer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/11488',
+              name: 'Julian Totino Tedesco',
+              role: 'penciller (cover)',
+            },
+          ],
+          returned: 3,
+        },
+        characters: {
+          available: 5,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57325/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009157',
+              name: 'Spider-Girl (Anya Corazon)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009609',
+              name: 'Spider-Girl (May Parker)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1017603',
+              name: 'Spider-Gwen (Gwen Stacy)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1011347',
+              name: 'Spider-Ham (Larval Earth)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+          ],
+          returned: 5,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57325/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/125467',
+              name: 'cover from Web Warriors (2015) #1',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/125468',
+              name: 'story from Web Warriors (2015) #1',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/57325/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 82517,
+        digitalId: 54646,
+        title: 'Spider-Man Noir (2020) #2',
+        issueNumber: 2,
+        variantDescription: '',
+        description:
+          'DATELINE 1933! After months of fruitless efforts, the Nazis have discovered an ancient evil in one of their dig sites on the other side of the world. After a friend of a friend is murdered, SCRAPPY YOUNG REPORTER and rookie gumshoe PETER PARKER finds himself torn from his borough and thrust into the action! Unsure of who he can trust, our hero quickly finds himself on A GLOBE-TROTTING ADVENTURE, encountering friend and foe alike - some of whom may even bear a passing resemblances to familiar faces from the Marvel Universe!',
+        modified: '2020-07-15T14:19:39-0400',
+        isbn: '',
+        upc: '75960609743200211',
+        diamondCode: 'FEB200920',
+        ean: '',
+        issn: '',
+        format: 'Comic',
+        pageCount: 32,
+        textObjects: [],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/82517',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/82517/spider-man_noir_2020_2?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'purchase',
+            url: 'http://comicstore.marvel.com/Spider-Man-Noir-2/digital-comic/54646?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=54646&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'inAppLink',
+            url: 'https://applink.marvel.com/issue/54646?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/29329',
+          name: 'Spider-Man Noir (2020)',
+        },
+        variants: [
+          {
+            resourceURI: 'http://gateway.marvel.com/v1/public/comics/88528',
+            name: 'Spider-Man Noir (2020) #2 (Variant)',
+          },
+        ],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2020-07-29T00:00:00-0400',
+          },
+          {
+            type: 'focDate',
+            date: '2020-03-09T00:00:00-0400',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2020-11-02T00:00:00-0500',
+          },
+          {
+            type: 'digitalPurchaseDate',
+            date: '2020-07-29T00:00:00-0400',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 3.99,
+          },
+          {
+            type: 'digitalPurchasePrice',
+            price: 3.99,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/7/10/5e7e69f3d6044',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/7/10/5e7e69f3d6044',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 5,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82517/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/13558',
+              name: 'Juan Ferreyra',
+              role: 'colorist',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12993',
+              name: 'Vc Travis Lanham',
+              role: 'letterer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12457',
+              name: 'Edward Devin Lewis',
+              role: 'editor',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12703',
+              name: 'Dave Rapoza',
+              role: 'penciler (cover)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12948',
+              name: 'Margaret Stohl',
+              role: 'writer',
+            },
+          ],
+          returned: 5,
+        },
+        characters: {
+          available: 1,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82517/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+          ],
+          returned: 1,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82517/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/182794',
+              name: 'cover from Spider-Man Noir (2020) #2',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/182795',
+              name: 'story from Spider-Man Noir (2020) #2',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82517/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 82516,
+        digitalId: 54319,
+        title: 'Spider-Man Noir (2020) #1',
+        issueNumber: 1,
+        variantDescription: '',
+        description:
+          'MURDER AND MYSTERY IN THE MIGHTY MARVEL MANNER! DATELINE, 1939! As the specter of war looms on the horizon, SPIDER-MAN: NOIR fights the good fight at home, stopping the injustices of a more friendly-neighborhood variety. But after a dame is murdered at The Black Cat nightclub and all clues point overseas, Spidey will have no choice but to board the next flight to Europe and kick off a globetrotting adventure through yesteryear of the Marvel Universe!',
+        modified: '2020-07-21T11:22:25-0400',
+        isbn: '',
+        upc: '75960609743200111',
+        diamondCode: 'JAN200816',
+        ean: '',
+        issn: '',
+        format: 'Comic',
+        pageCount: 32,
+        textObjects: [],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/82516',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/82516/spider-man_noir_2020_1?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'purchase',
+            url: 'http://comicstore.marvel.com/Spider-Man-Noir-1/digital-comic/54319?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=54319&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'inAppLink',
+            url: 'https://applink.marvel.com/issue/54319?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/29329',
+          name: 'Spider-Man Noir (2020)',
+        },
+        variants: [
+          {
+            resourceURI: 'http://gateway.marvel.com/v1/public/comics/85263',
+            name: 'Spider-Man Noir (2020) #1 (Variant)',
+          },
+          {
+            resourceURI: 'http://gateway.marvel.com/v1/public/comics/85264',
+            name: 'Spider-Man Noir (2020) #1 (Variant)',
+          },
+          {
+            resourceURI: 'http://gateway.marvel.com/v1/public/comics/85265',
+            name: 'Spider-Man Noir (2020) #1 (Variant)',
+          },
+          {
+            resourceURI: 'http://gateway.marvel.com/v1/public/comics/89364',
+            name: 'Spider-Man Noir (2020) #1 (Variant)',
+          },
+        ],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2020-03-04T00:00:00-0500',
+          },
+          {
+            type: 'focDate',
+            date: '2020-02-10T00:00:00-0500',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2020-09-07T00:00:00-0400',
+          },
+          {
+            type: 'digitalPurchaseDate',
+            date: '2020-03-04T00:00:00-0500',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 3.99,
+          },
+          {
+            type: 'digitalPurchasePrice',
+            price: 3.99,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/8/d0/5e53eb0d00e91',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/8/d0/5e53eb0d00e91',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 5,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82516/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/13558',
+              name: 'Juan Ferreyra',
+              role: 'colorist',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12993',
+              name: 'Vc Travis Lanham',
+              role: 'letterer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12457',
+              name: 'Edward Devin Lewis',
+              role: 'editor',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12703',
+              name: 'Dave Rapoza',
+              role: 'painter (cover)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12948',
+              name: 'Margaret Stohl',
+              role: 'writer',
+            },
+          ],
+          returned: 5,
+        },
+        characters: {
+          available: 1,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82516/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+          ],
+          returned: 1,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82516/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/182792',
+              name: 'cover from Spider-Man Noir (2020) #1',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/182793',
+              name: 'story from Spider-Man Noir (2020) #1',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82516/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 24312,
+        digitalId: 27811,
+        title: 'SPIDER-MAN NOIR GN-TPB (Trade Paperback)',
+        issueNumber: 1,
+        variantDescription: '',
+        description: '',
+        modified: '2020-07-21T14:12:20-0400',
+        isbn: '978-0-7851-2923-3',
+        upc: '',
+        diamondCode: 'JUL090611',
+        ean: '9780785 129233 51499',
+        issn: '',
+        format: 'Trade Paperback',
+        pageCount: 112,
+        textObjects: [
+          {
+            type: 'issue_solicit_text',
+            language: 'en-us',
+            text: 'With great power, there must also come great responsibility - and when those in power abuse it, it\'s the people\'s responsibility to remove them. The year is 1933, and New York City is not-so-secretly run by corrupt politicians, crooked cops, big businesses and suave gangland bosses like New York\'s worst, the Goblin. But when a fateful spider-bite gives the young rabble-rouser Peter Parker the power to fight the mobster who killed his Uncle Ben, will even that be enough? It\'s a tangled web of Great Depression pulp, with familiar faces like you\'ve never seen them before! By "Hardboiled" David Hine, Fabrice "The Spider" Sapolsky and Carmine "Carbine" Di Giandomenico! Collecting SPIDER-MAN NOIR # 1-4.',
+          },
+        ],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/24312',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/collection/24312/spider-man_noir_gn-tpb_trade_paperback?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'purchase',
+            url: 'http://comicstore.marvel.com/SPIDER-MAN-NOIR-GN-TPB-1/digital-comic/27811?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=27811&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'inAppLink',
+            url: 'https://applink.marvel.com/issue/27811?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/7511',
+          name: 'SPIDER-MAN NOIR GN-TPB (2009)',
+        },
+        variants: [],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2011-07-06T00:00:00-0400',
+          },
+          {
+            type: 'focDate',
+            date: '-0001-11-30T00:00:00-0500',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2012-10-11T00:00:00-0400',
+          },
+          {
+            type: 'digitalPurchaseDate',
+            date: '2012-10-11T00:00:00-0400',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 14.99,
+          },
+          {
+            type: 'digitalPurchasePrice',
+            price: 6.99,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/8/d0/4bb52ab285d43',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/8/d0/4bb52ab285d43',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 4,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/24312/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/970',
+              name: 'Dennis Calero',
+              role: 'penciller (cover)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/827',
+              name: 'Carmine DI Giandomenico',
+              role: 'penciller',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/371',
+              name: 'David Hine',
+              role: 'writer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/8487',
+              name: 'Fabrice Sapolsky',
+              role: 'writer',
+            },
+          ],
+          returned: 4,
+        },
+        characters: {
+          available: 1,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/24312/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+          ],
+          returned: 1,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/24312/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/53864',
+              name: 'Spider-Man Noir 1-4',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/53865',
+              name: 'Spider-Man Noir 1-4',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/24312/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 41148,
+        digitalId: 0,
+        title: 'SPIDER-MAN NOIR PREMIERE HC (Hardcover)',
+        issueNumber: 1,
+        variantDescription: '',
+        description:
+          'Collects Spider-Man Noir #1-4. It was 1933 and the Great Depression was just getting started. And so was the corrupt mob boss the Goblin. When embittered, angry Peter Parker meets a spider and its life-changing bite, he may have just inherited the force to honor the phrase, "If those in power can\'t be trusted, it\'s the responsibility of the people to remove them."',
+        modified: '2020-07-21T14:18:07-0400',
+        isbn: '978-0-7851-3944-7',
+        upc: '',
+        diamondCode: 'MAR092633',
+        ean: '9780785 139447 51999',
+        issn: '',
+        format: 'Hardcover',
+        pageCount: 112,
+        textObjects: [
+          {
+            type: 'issue_solicit_text',
+            language: 'en-us',
+            text: 'With great power, there must also come great responsibility - and when those in power abuse it, it\'s the people\'s responsibility to remove them. The year is 1933, and New York City is not-so-secretly run by corrupt politicians, crooked cops, big businesses and suave gangland bosses like New York\'s worst, the Goblin. But when a fateful spider-bite gives the young rabble-rouser Peter Parker the power to fight the mobster who killed his Uncle Ben, will even that be enough? It\'s a tangled web of Great Depression pulp, with familiar faces like you\'ve never seen them before! By "Hardboiled" David Hine, Fabrice "The Spider" Sapolsky and Carmine "Carbine" Di Giandomenico! Collecting SPIDER-MAN NOIR # 1-4.\nRated T+...$19.99',
+          },
+        ],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/41148',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/collection/41148/spider-man_noir_premiere_hc_hardcover?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/15284',
+          name: 'SPIDER-MAN NOIR PREMIERE HC (2011)',
+        },
+        variants: [],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2009-05-27T00:00:00-0400',
+          },
+          {
+            type: 'focDate',
+            date: '-0001-11-30T00:00:00-0500',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 19.99,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/5/e0/5b8ec044d1333',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/5/e0/5b8ec044d1333',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/41148/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/371',
+              name: 'David Hine',
+              role: 'writer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/8487',
+              name: 'Fabrice Sapolsky',
+              role: 'writer',
+            },
+          ],
+          returned: 2,
+        },
+        characters: {
+          available: 1,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/41148/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+          ],
+          returned: 1,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/41148/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/93153',
+              name: 'Cover #93153',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/93154',
+              name: 'Interior #93154',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/41148/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 82518,
+        digitalId: 54923,
+        title: 'Spider-Man Noir (2020) #3',
+        issueNumber: 3,
+        variantDescription: '',
+        description:
+          'THE ADVENTURE CONTINUES! A murder investigation may have led Spider-Man a thousand miles from home, but DANGER is close behind! And as the specter of war looms in Europe, a dangerous operative shrouded in mystery has designs of his own, with ELECTRO leading the charge!',
+        modified: '2020-09-23T09:07:26-0400',
+        isbn: '',
+        upc: '75960609743200311',
+        diamondCode: 'MAR200982',
+        ean: '',
+        issn: '',
+        format: 'Comic',
+        pageCount: 32,
+        textObjects: [],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/82518',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/82518/spider-man_noir_2020_3?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'purchase',
+            url: 'http://comicstore.marvel.com/Spider-Man-Noir-3/digital-comic/54923?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=54923&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'inAppLink',
+            url: 'https://applink.marvel.com/issue/54923?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/29329',
+          name: 'Spider-Man Noir (2020)',
+        },
+        variants: [
+          {
+            resourceURI: 'http://gateway.marvel.com/v1/public/comics/89270',
+            name: 'Spider-Man Noir (2020) #3 (Variant)',
+          },
+        ],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2020-08-26T00:00:00-0400',
+          },
+          {
+            type: 'focDate',
+            date: '2020-08-03T00:00:00-0400',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2020-11-30T00:00:00-0500',
+          },
+          {
+            type: 'digitalPurchaseDate',
+            date: '2020-08-26T00:00:00-0400',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 3.99,
+          },
+          {
+            type: 'digitalPurchasePrice',
+            price: 3.99,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/9/30/5f3d36a4ed801',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/9/30/5f3d36a4ed801',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 5,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82518/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/13558',
+              name: 'Juan Ferreyra',
+              role: 'colorist',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12993',
+              name: 'Vc Travis Lanham',
+              role: 'letterer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12457',
+              name: 'Edward Devin Lewis',
+              role: 'editor',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12703',
+              name: 'Dave Rapoza',
+              role: 'penciler (cover)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12948',
+              name: 'Margaret Stohl',
+              role: 'writer',
+            },
+          ],
+          returned: 5,
+        },
+        characters: {
+          available: 1,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82518/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+          ],
+          returned: 1,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82518/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/182796',
+              name: 'cover from Spider-Man Noir (2020) #3',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/182797',
+              name: 'story from Spider-Man Noir (2020) #3',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82518/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 82519,
+        digitalId: 55118,
+        title: 'Spider-Man Noir (2020) #4',
+        issueNumber: 4,
+        variantDescription: '',
+        description:
+          'The drums of war continue to beat SPIDER-MAN NOIR down as he finds himself buried in the deserts of Babylon! Will the sands drown our hero, or will he withstand the hammering and save the day?',
+        modified: '2020-10-01T09:05:23-0400',
+        isbn: '',
+        upc: '75960609743200411',
+        diamondCode: 'APR200977',
+        ean: '',
+        issn: '',
+        format: 'Comic',
+        pageCount: 32,
+        textObjects: [],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/82519',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/82519/spider-man_noir_2020_4?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'purchase',
+            url: 'http://comicstore.marvel.com/Spider-Man-Noir-4/digital-comic/55118?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=55118&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'inAppLink',
+            url: 'https://applink.marvel.com/issue/55118?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/29329',
+          name: 'Spider-Man Noir (2020)',
+        },
+        variants: [
+          {
+            resourceURI: 'http://gateway.marvel.com/v1/public/comics/90262',
+            name: 'Spider-Man Noir (2020) #4 (Variant)',
+          },
+        ],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2020-09-23T00:00:00-0400',
+          },
+          {
+            type: 'focDate',
+            date: '2020-08-31T00:00:00-0400',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2020-12-28T00:00:00-0500',
+          },
+          {
+            type: 'digitalPurchaseDate',
+            date: '2020-09-23T00:00:00-0400',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 3.99,
+          },
+          {
+            type: 'digitalPurchasePrice',
+            price: 3.99,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/6/00/5f6510b2c6d52',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/6/00/5f6510b2c6d52',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 6,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82519/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/13558',
+              name: 'Juan Ferreyra',
+              role: 'colorist',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12993',
+              name: 'Vc Travis Lanham',
+              role: 'letterer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12457',
+              name: 'Edward Devin Lewis',
+              role: 'editor',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/13680',
+              name: 'Patrick Okeefe',
+              role: 'painter (cover)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12703',
+              name: 'Dave Rapoza',
+              role: 'penciler (cover)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12948',
+              name: 'Margaret Stohl',
+              role: 'writer',
+            },
+          ],
+          returned: 6,
+        },
+        characters: {
+          available: 1,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82519/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+          ],
+          returned: 1,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82519/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/182798',
+              name: 'cover from Spider-Man Noir (2020) #4',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/182799',
+              name: 'story from Spider-Man Noir (2020) #4',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82519/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 82520,
+        digitalId: 55562,
+        title: 'Spider-Man Noir (2020) #5',
+        issueNumber: 5,
+        variantDescription: '',
+        description:
+          "ONCE NOIR INTO THE BREACH! Peter Parker has been killed, resurrected and battled his way across the multiverse - but this globetrotting treasure hunt may be what finally does him in! Featuring familiar friendly faces and foes alike, this face-melting fifth issue is one you won't want to miss!",
+        modified: '2020-10-27T09:04:10-0400',
+        isbn: '',
+        upc: '75960609743200511',
+        diamondCode: 'AUG200649',
+        ean: '',
+        issn: '',
+        format: 'Comic',
+        pageCount: 32,
+        textObjects: [],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/82520',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/82520/spider-man_noir_2020_5?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'purchase',
+            url: 'http://comicstore.marvel.com/Spider-Man-Noir-5/digital-comic/55562?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=55562&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'inAppLink',
+            url: 'https://applink.marvel.com/issue/55562?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/29329',
+          name: 'Spider-Man Noir (2020)',
+        },
+        variants: [],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2020-10-28T00:00:00-0400',
+          },
+          {
+            type: 'focDate',
+            date: '2020-10-05T00:00:00-0400',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2021-02-01T00:00:00-0500',
+          },
+          {
+            type: 'digitalPurchaseDate',
+            date: '2020-10-28T00:00:00-0400',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 3.99,
+          },
+          {
+            type: 'digitalPurchasePrice',
+            price: 3.99,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/e/03/6019680908ce6',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/e/03/6019680908ce6',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 5,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82520/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/13558',
+              name: 'Juan Ferreyra',
+              role: 'colorist',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12993',
+              name: 'Vc Travis Lanham',
+              role: 'letterer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12457',
+              name: 'Edward Devin Lewis',
+              role: 'editor',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12703',
+              name: 'Dave Rapoza',
+              role: 'penciler (cover)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12948',
+              name: 'Margaret Stohl',
+              role: 'writer',
+            },
+          ],
+          returned: 5,
+        },
+        characters: {
+          available: 1,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82520/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+          ],
+          returned: 1,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82520/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/182800',
+              name: 'cover from Spider-Man Noir (2020) #5',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/182801',
+              name: 'story from Spider-Man Noir (2020) #5',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/82520/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 98592,
+        digitalId: 57997,
+        title: 'Spider-Verse Unlimited Infinity Comic (2022) #1',
+        issueNumber: 1,
+        variantDescription: '',
+        description: '',
+        modified: '2022-03-12T09:21:35-0500',
+        isbn: '',
+        upc: '75960620273700111',
+        diamondCode: '',
+        ean: '',
+        issn: '',
+        format: 'Digital Vertical Comic',
+        pageCount: 10,
+        textObjects: [
+          {
+            type: 'issue_solicit_text',
+            language: 'en-us',
+            text: 'What makes Spider-Man SPIDER-MAN? Find out here with an instant-classic tale that kicks off the most amazing Infinity Comic ever!',
+          },
+        ],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/98592',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/98592/spider-verse_unlimited_infinity_comic_2022_1?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'purchase',
+            url: 'http://comicstore.marvel.com/Spider-Verse-Unlimited-Infinity-Comic-1/digital-comic/57997?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=57997&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/34010',
+          name: 'Spider-Verse Unlimited Infinity Comic (2022 - 2023)',
+        },
+        variants: [],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2022-03-16T00:00:00-0400',
+          },
+          {
+            type: 'focDate',
+            date: '2022-02-14T00:00:00-0500',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2022-03-16T00:00:00-0400',
+          },
+          {
+            type: 'digitalPurchaseDate',
+            date: '2023-05-16T13:26:00-0400',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 0,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/9/d0/622928fda4ec8',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/9/d0/622928fda4ec8',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 5,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/98592/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/4300',
+              name: 'Nick Lowe',
+              role: 'editor',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/13012',
+              name: 'Bruno Oliveira',
+              role: 'inker',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/13339',
+              name: 'Pete Pantazis',
+              role: 'colorist',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12851',
+              name: 'Anthony Piper',
+              role: 'writer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12974',
+              name: 'Vc Joe Sabino',
+              role: 'letterer',
+            },
+          ],
+          returned: 5,
+        },
+        characters: {
+          available: 6,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/98592/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1017603',
+              name: 'Spider-Gwen (Gwen Stacy)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1011347',
+              name: 'Spider-Ham (Larval Earth)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1014873',
+              name: 'Spider-Man (2099)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1016181',
+              name: 'Spider-Man (Miles Morales)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009610',
+              name: 'Spider-Man (Peter Parker)',
+            },
+          ],
+          returned: 6,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/98592/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/218253',
+              name: 'cover from Spidey & His Amazing Friends Infinity Comic (2022)',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/218254',
+              name: 'story from Spidey & His Amazing Friends Infinity Comic (2022)',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/98592/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 106146,
+        digitalId: 62381,
+        title: 'Spider-Verse Unlimited Infinity Comic (2022) #41',
+        issueNumber: 41,
+        variantDescription: '',
+        description: '',
+        modified: '2023-03-10T13:44:57-0500',
+        isbn: '',
+        upc: '75960620273704111',
+        diamondCode: '',
+        ean: '',
+        issn: '',
+        format: 'Digital Vertical Comic',
+        pageCount: 6,
+        textObjects: [
+          {
+            type: 'issue_solicit_text',
+            language: 'en-us',
+            text: 'In the midst of a massive rally in New York City, Spider-Man Noir teams up with Daredevil Noir to stave off disaster, and then Spider-Man Noir hears...the voice of an old foe.',
+          },
+        ],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/106146',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/106146/spider-verse_unlimited_infinity_comic_2022_41?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=62381&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/34010',
+          name: 'Spider-Verse Unlimited Infinity Comic (2022 - 2023)',
+        },
+        variants: [],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2023-03-14T00:00:00-0400',
+          },
+          {
+            type: 'focDate',
+            date: '2023-02-13T00:00:00-0500',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2023-03-14T00:00:00-0400',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 0,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/7/10/63e517a8919cf',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/7/10/63e517a8919cf',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 5,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/106146/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12798',
+              name: 'Amy Chu',
+              role: 'writer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/10172',
+              name: 'Vc Clayton Cowles',
+              role: 'letterer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/428',
+              name: 'Antonio Fabela',
+              role: 'colorist',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/8382',
+              name: 'Dio Neves',
+              role: 'penciller (cover)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/11701',
+              name: 'Elizabeth Pyle',
+              role: 'editor',
+            },
+          ],
+          returned: 5,
+        },
+        characters: {
+          available: 1,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/106146/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+          ],
+          returned: 1,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/106146/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/233403',
+              name: 'cover from Spider-Verse Unlimited Infinity Comic (2022) #41',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/233404',
+              name: 'story from Spider-Verse Unlimited Infinity Comic (2022) #41',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/106146/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 106147,
+        digitalId: 62603,
+        title: 'Spider-Verse Unlimited Infinity Comic (2022) #42',
+        issueNumber: 42,
+        variantDescription: '',
+        description: '',
+        modified: '2023-03-19T19:19:41-0400',
+        isbn: '',
+        upc: '75960620273704211',
+        diamondCode: '',
+        ean: '',
+        issn: '',
+        format: 'Digital Vertical Comic',
+        pageCount: 6,
+        textObjects: [
+          {
+            type: 'issue_solicit_text',
+            language: 'en-us',
+            text: 'Spider-Man Noir recognizes Doctor Otto Octavius as the voice that’s using radio waves to hypnotize all of New York City, and Daredevil Noir "sees" the radio signal is coming from the Empire State Building. How will Spider-Man get there before the whole city is under Doc Ock’s control?',
+          },
+        ],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/106147',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/106147/spider-verse_unlimited_infinity_comic_2022_42?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=62603&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/34010',
+          name: 'Spider-Verse Unlimited Infinity Comic (2022 - 2023)',
+        },
+        variants: [],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2023-03-21T00:00:00-0400',
+          },
+          {
+            type: 'focDate',
+            date: '2023-02-20T00:00:00-0500',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2023-03-21T00:00:00-0400',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 0,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/6/00/63f53eb2a3920',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/6/00/63f53eb2a3920',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 5,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/106147/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12798',
+              name: 'Amy Chu',
+              role: 'writer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/10172',
+              name: 'Vc Clayton Cowles',
+              role: 'letterer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/428',
+              name: 'Antonio Fabela',
+              role: 'colorist',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/8382',
+              name: 'Dio Neves',
+              role: 'penciller (cover)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/11701',
+              name: 'Elizabeth Pyle',
+              role: 'editor',
+            },
+          ],
+          returned: 5,
+        },
+        characters: {
+          available: 1,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/106147/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+          ],
+          returned: 1,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/106147/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/233405',
+              name: 'cover from Spider-Verse Unlimited Infinity Comic (2022) #42',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/233406',
+              name: 'story from Spider-Verse Unlimited Infinity Comic (2022) #42',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/106147/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 106148,
+        digitalId: 62605,
+        title: 'Spider-Verse Unlimited Infinity Comic (2022) #43',
+        issueNumber: 43,
+        variantDescription: '',
+        description: '',
+        modified: '2023-03-26T19:58:36-0400',
+        isbn: '',
+        upc: '75960620273704311',
+        diamondCode: '',
+        ean: '',
+        issn: '',
+        format: 'Digital Vertical Comic',
+        pageCount: 6,
+        textObjects: [
+          {
+            type: 'issue_solicit_text',
+            language: 'en-us',
+            text: 'Spider-Man Noir has located the lair of Otto Octavius in the Empire State Building, but this Doc Ock is more powerful and more deranged than before, and now he has followers. What will it take for Spider-Man Noir to stop him and save the minds of his fellow New Yorkers?',
+          },
+        ],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/106148',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/106148/spider-verse_unlimited_infinity_comic_2022_43?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=62605&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/34010',
+          name: 'Spider-Verse Unlimited Infinity Comic (2022 - 2023)',
+        },
+        variants: [],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2023-03-28T00:00:00-0400',
+          },
+          {
+            type: 'focDate',
+            date: '2023-02-27T00:00:00-0500',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2023-03-28T00:00:00-0400',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 0,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/f/10/6409eeaab8b2c',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/f/10/6409eeaab8b2c',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 5,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/106148/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12798',
+              name: 'Amy Chu',
+              role: 'writer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/10172',
+              name: 'Vc Clayton Cowles',
+              role: 'letterer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/428',
+              name: 'Antonio Fabela',
+              role: 'colorist',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/8382',
+              name: 'Dio Neves',
+              role: 'inker',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/11701',
+              name: 'Elizabeth Pyle',
+              role: 'editor',
+            },
+          ],
+          returned: 5,
+        },
+        characters: {
+          available: 1,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/106148/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+          ],
+          returned: 1,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/106148/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/233407',
+              name: 'cover from Spider-Verse Unlimited Infinity Comic (2022) #43',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/233408',
+              name: 'story from Spider-Verse Unlimited Infinity Comic (2022) #43',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/106148/events',
+          items: [],
+          returned: 0,
+        },
+      },
+      {
+        id: 99743,
+        digitalId: 60584,
+        title: 'Spider-Man (2022) #1',
+        issueNumber: 1,
+        variantDescription: '',
+        description:
+          'The End of the Spider-Verse is here! Morlun is back and he is not alone. Allied with one of the most powerful beings known to the Spider-Verse, the scariest Spider-Villain of all time is making his biggest play and no Spider is safe. Especially not the Chosen Spider himself, Peter Parker. With Peter working for Norman Osborn and using a glider…does he have it coming? Spidey’s 60th Anniversary is no joke as two of the most legendary Spider-Creators are working together on Spidey for the first time and you know it’s going to be one for the record books!',
+        modified: '2023-08-23T12:50:17-0400',
+        isbn: '',
+        upc: '75960620327700111',
+        diamondCode: '',
+        ean: '',
+        issn: '',
+        format: 'Comic',
+        pageCount: 40,
+        textObjects: [],
+        resourceURI: 'http://gateway.marvel.com/v1/public/comics/99743',
+        urls: [
+          {
+            type: 'detail',
+            url: 'http://marvel.com/comics/issue/99743/spider-man_2022_1?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'purchase',
+            url: 'http://comicstore.marvel.com/Spider-Man-1/digital-comic/60584?utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+          {
+            type: 'reader',
+            url: 'http://marvel.com/digitalcomics/view.htm?iid=60584&utm_campaign=apiRef&utm_source=4fb52d0ef3fa60ac1f71e3bf046edc41',
+          },
+        ],
+        series: {
+          resourceURI: 'http://gateway.marvel.com/v1/public/series/34328',
+          name: 'Spider-Man (2022 - Present)',
+        },
+        variants: [
+          {
+            resourceURI: 'http://gateway.marvel.com/v1/public/comics/102588',
+            name: 'Spider-Man (2022) #1 (Variant)',
+          },
+          {
+            resourceURI: 'http://gateway.marvel.com/v1/public/comics/104612',
+            name: 'Spider-Man (2022) #1 (Variant)',
+          },
+          {
+            resourceURI: 'http://gateway.marvel.com/v1/public/comics/104613',
+            name: 'Spider-Man (2022) #1 (Variant)',
+          },
+          {
+            resourceURI: 'http://gateway.marvel.com/v1/public/comics/104614',
+            name: 'Spider-Man (2022) #1 (Variant)',
+          },
+          {
+            resourceURI: 'http://gateway.marvel.com/v1/public/comics/104615',
+            name: 'Spider-Man (2022) #1 (Variant)',
+          },
+          {
+            resourceURI: 'http://gateway.marvel.com/v1/public/comics/105043',
+            name: 'Spider-Man (2022) #1 (Variant)',
+          },
+          {
+            resourceURI: 'http://gateway.marvel.com/v1/public/comics/105044',
+            name: 'Spider-Man (2022) #1 (Variant)',
+          },
+          {
+            resourceURI: 'http://gateway.marvel.com/v1/public/comics/105785',
+            name: 'Spider-Man (2022) #1 (Variant)',
+          },
+          {
+            resourceURI: 'http://gateway.marvel.com/v1/public/comics/105869',
+            name: 'Spider-Man (2022) #1 (Variant)',
+          },
+        ],
+        collections: [],
+        collectedIssues: [],
+        dates: [
+          {
+            type: 'onsaleDate',
+            date: '2022-10-05T00:00:00-0400',
+          },
+          {
+            type: 'focDate',
+            date: '2022-09-05T00:00:00-0400',
+          },
+          {
+            type: 'unlimitedDate',
+            date: '2023-01-09T00:00:00-0500',
+          },
+          {
+            type: 'digitalPurchaseDate',
+            date: '2022-07-13T00:00:00-0400',
+          },
+        ],
+        prices: [
+          {
+            type: 'printPrice',
+            price: 4.99,
+          },
+        ],
+        thumbnail: {
+          path: 'http://i.annihil.us/u/prod/marvel/i/mg/c/10/633cefa06d1f4',
+          extension: 'jpg',
+        },
+        images: [
+          {
+            path: 'http://i.annihil.us/u/prod/marvel/i/mg/c/10/633cefa06d1f4',
+            extension: 'jpg',
+          },
+        ],
+        creators: {
+          available: 7,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/99743/creators',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/87',
+              name: 'Mark Bagley',
+              role: 'penciler (cover)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/5251',
+              name: 'Vc Joe Caramagna',
+              role: 'letterer',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/430',
+              name: 'Edgar Delgado',
+              role: 'colorist',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/359',
+              name: 'John Dell',
+              role: 'inker',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/4300',
+              name: 'Nick Lowe',
+              role: 'editor',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/14157',
+              name: 'Alejandro Sanchez',
+              role: 'colorist (cover)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/creators/12983',
+              name: 'Dan Slott',
+              role: 'writer',
+            },
+          ],
+          returned: 7,
+        },
+        characters: {
+          available: 7,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/99743/characters',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1011088',
+              name: 'Morlun',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1017815',
+              name: 'Silk (Cindy Moon)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1017603',
+              name: 'Spider-Gwen (Gwen Stacy)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1016181',
+              name: 'Spider-Man (Miles Morales)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012295',
+              name: 'Spider-Man (Noir)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009610',
+              name: 'Spider-Man (Peter Parker)',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009608',
+              name: 'Spider-Woman (Jessica Drew)',
+            },
+          ],
+          returned: 7,
+        },
+        stories: {
+          available: 2,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/99743/stories',
+          items: [
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/220586',
+              name: 'cover from Spider-Man (2022) #1',
+              type: 'cover',
+            },
+            {
+              resourceURI: 'http://gateway.marvel.com/v1/public/stories/220587',
+              name: 'story from Spider-Man (2022) #1',
+              type: 'interiorStory',
+            },
+          ],
+          returned: 2,
+        },
+        events: {
+          available: 0,
+          collectionURI: 'http://gateway.marvel.com/v1/public/comics/99743/events',
+          items: [],
+          returned: 0,
+        },
+      },
+    ],
+  },
+}

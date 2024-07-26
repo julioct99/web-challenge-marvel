@@ -4,7 +4,8 @@ import { useParams } from 'react-router-dom'
 import styled from 'styled-components'
 
 import { CharacterContext } from '../../context/character'
-import { fetchCharacter } from '../../shared/api/fetchers'
+import { fetchCharacter, fetchCharacterComics } from '../../shared/api/fetchers'
+import ComicList from './ComicList/ComicList'
 
 const CharacterDetailContainer = styled.div`
   display: grid;
@@ -21,13 +22,13 @@ const CharacterDetailBody = styled.div`
 
 const CharacterDetail = () => {
   const [loading, setLoading] = useState(false)
-  const { character, setCharacter } = useContext(CharacterContext)
+  const { character, setCharacter, comics, setComics } = useContext(CharacterContext)
 
   const params = useParams()
   const characterId = params.id ? parseInt(params.id) : null
 
   useEffect(() => {
-    loadCharacter()
+    Promise.all([loadCharacter(), loadComics()])
   }, [characterId])
 
   const loadCharacter = async () => {
@@ -42,6 +43,18 @@ const CharacterDetail = () => {
     }
   }
 
+  const loadComics = async () => {
+    setLoading(true)
+
+    try {
+      if (!characterId) return
+      const comics = await fetchCharacterComics(characterId)
+      setComics(comics.data.results)
+    } finally {
+      setLoading(false)
+    }
+  }
+
   if (loading) {
     return <p>Loading...</p>
   }
@@ -49,6 +62,8 @@ const CharacterDetail = () => {
   if (!character) {
     return <p>Character not found</p>
   }
+
+  console.log({ comics })
 
   return (
     <div style={{ borderTop: '1px solid darkgray' }}>
@@ -67,6 +82,8 @@ const CharacterDetail = () => {
           </CharacterDetailBody>
         </CharacterDetailContainer>
       </div>
+
+      <ComicList comics={comics} />
     </div>
   )
 }
