@@ -28,7 +28,8 @@ const CardBody = styled.div`
 
 const Thumbnail = styled.img`
   width: 100%;
-  height: 225px;
+  height: auto;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
 `
 

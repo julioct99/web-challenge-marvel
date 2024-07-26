@@ -16,10 +16,26 @@ const CharacterDetailContainer = styled.div`
   color: white;
   max-width: 1200px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+
+    .character-image {
+      width: '100%';
+      height: 'auto';
+    }
+  }
 `
 
 const CharacterDetailBody = styled.div`
   padding: 32px;
+`
+
+const CharacterImage = styled.img`
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 `
 
 const CharacterDetail = () => {
@@ -72,8 +88,8 @@ const CharacterDetail = () => {
       <div style={{ backgroundColor: 'black' }}>
         <CharacterDetailContainer>
           <div>
-            <img
-              height={300}
+            <CharacterImage
+              className='character-image'
               src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
               alt={character.name}
             />
