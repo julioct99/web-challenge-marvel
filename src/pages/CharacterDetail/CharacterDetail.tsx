@@ -1,14 +1,12 @@
-import { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
 import styled from 'styled-components'
 
-import { CharacterContext } from '../../context/character'
+import { useCharacter } from '../../context/character'
 import ComicList from './ComicList/ComicList'
 
-import { fetchCharacter, fetchCharacterComics } from '../../shared/api/fetchers'
-import { Character, Comic } from '../../shared/types/marvel-api'
 import CharacterFavoriteButton from '../../components/CharacterFavoriteButton/CharacterFavoriteButton'
+import { useComics } from '../../context/comics'
 
 const CharacterDetailContainer = styled.div`
   display: grid;
@@ -46,41 +44,13 @@ const CharacterDetailTitle = styled.div`
 `
 
 const CharacterDetail = () => {
-  const [loading, setLoading] = useState(false)
-  const { character, setCharacter, comics, setComics } = useContext(CharacterContext)
-
   const params = useParams()
   const characterId = params.id ? parseInt(params.id) : null
 
-  useEffect(() => {
-    Promise.all([loadCharacter(), loadComics()])
-  }, [characterId])
+  const { character, loading: characterIsLoading } = useCharacter(characterId)
+  const { comics, loading: comicsAreLoading } = useComics(characterId)
 
-  const loadCharacter = async () => {
-    setLoading(true)
-
-    try {
-      if (!characterId) return
-      const character = await fetchCharacter(characterId)
-      setCharacter(character.data.results[0] as Character)
-    } finally {
-      setLoading(false)
-    }
-  }
-
-  const loadComics = async () => {
-    setLoading(true)
-
-    try {
-      if (!characterId) return
-      const comics = await fetchCharacterComics(characterId)
-      setComics(comics.data.results as Comic[])
-    } finally {
-      setLoading(false)
-    }
-  }
-
-  if (loading) {
+  if (characterIsLoading) {
     return <p>Loading...</p>
   }
 
@@ -109,7 +79,7 @@ const CharacterDetail = () => {
         </CharacterDetailContainer>
       </div>
 
-      <ComicList comics={comics} />
+      <ComicList comics={comics} loading={comicsAreLoading} />
     </div>
   )
 }

@@ -1,18 +1,26 @@
-import { createContext, useState, ReactNode, FunctionComponent } from 'react'
-import { Character, Comic } from '../shared/types/marvel-api'
+import {
+  createContext,
+  useState,
+  ReactNode,
+  FunctionComponent,
+  useEffect,
+  useContext,
+} from 'react'
+import { Character } from '../shared/types/marvel-api'
+import { fetchCharacter } from '../shared/api/fetchers'
 
 interface CharacterContextType {
   character: Character | null
   setCharacter: React.Dispatch<React.SetStateAction<Character | null>>
-  comics: Comic[]
-  setComics: React.Dispatch<React.SetStateAction<Comic[]>>
+  loadCharacter: (characterId: number) => void
+  loading: boolean
 }
 
 export const CharacterContext = createContext<CharacterContextType>({
   character: null,
   setCharacter: () => {},
-  comics: [],
-  setComics: () => {},
+  loadCharacter: () => {},
+  loading: false,
 })
 
 interface CharacterContextProviderProps {
@@ -23,13 +31,25 @@ const CharacterContextProvider: FunctionComponent<CharacterContextProviderProps>
   children,
 }) => {
   const [character, setCharacter] = useState<Character | null>(null)
-  const [comics, setComics] = useState<Comic[]>([])
+  const [loading, setLoading] = useState(false)
+
+  const loadCharacter = async (characterId: number) => {
+    setLoading(true)
+
+    try {
+      if (!characterId) return
+      const character = await fetchCharacter(characterId)
+      setCharacter(character.data.results[0] as Character)
+    } finally {
+      setLoading(false)
+    }
+  }
 
   const getContextValue = (): CharacterContextType => ({
     character,
     setCharacter,
-    comics,
-    setComics,
+    loadCharacter,
+    loading,
   })
 
   return (
@@ -40,3 +60,14 @@ const CharacterContextProvider: FunctionComponent<CharacterContextProviderProps>
 }
 
 export default CharacterContextProvider
+
+export const useCharacter = (characterId: number | null) => {
+  const { character, loadCharacter, loading, ...rest } = useContext(CharacterContext)
+
+  useEffect(() => {
+    if (!characterId) return
+    loadCharacter(characterId)
+  }, [characterId])
+
+  return { character, loading, loadCharacter, ...rest }
+}

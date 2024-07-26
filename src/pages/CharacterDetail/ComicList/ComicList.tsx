@@ -6,6 +6,7 @@ import ScrollContainer from 'react-indiana-drag-scroll'
 
 interface ComicListProps {
   comics: Comic[]
+  loading: boolean
 }
 
 const PageContentContainer = styled.div`
@@ -43,7 +44,14 @@ const ComicCarousel = styled.div`
   }
 `
 
-const ComicList: React.FunctionComponent<ComicListProps> = ({ comics }) => {
+const ComicList: React.FunctionComponent<ComicListProps> = ({
+  comics,
+  loading = false,
+}) => {
+  if (loading) {
+    return <p>Loading...</p>
+  }
+
   return (
     <PageContentContainer>
       <h2>Comics</h2>

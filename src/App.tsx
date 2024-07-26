@@ -3,34 +3,18 @@ import { Route, Routes } from 'react-router-dom'
 import PageLayout from './layout/PageLayout/PageLayout'
 import CharacterList from './pages/CharacterList/CharacterList'
 import CharacterDetail from './pages/CharacterDetail/CharacterDetail'
-import CharactersContextProvider from './context/characters'
-import CharacterContextProvider from './context/character'
-import FavoriteCharactersContextProvider from './context/favorite-characters'
+import ContextProviders from './components/ContextProviders/ContextProviders'
 
 function App() {
   return (
-    <FavoriteCharactersContextProvider>
+    <ContextProviders>
       <PageLayout>
         <Routes>
-          <Route
-            path='/'
-            element={
-              <CharactersContextProvider>
-                <CharacterList />
-              </CharactersContextProvider>
-            }
-          />
-          <Route
-            path='/characters/:id'
-            element={
-              <CharacterContextProvider>
-                <CharacterDetail />
-              </CharacterContextProvider>
-            }
-          />
+          <Route path='/' element={<CharacterList />} />
+          <Route path='/characters/:id' element={<CharacterDetail />} />
         </Routes>
       </PageLayout>
-    </FavoriteCharactersContextProvider>
+    </ContextProviders>
   )
 }
 
