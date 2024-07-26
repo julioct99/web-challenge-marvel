@@ -4,8 +4,10 @@ import { useParams } from 'react-router-dom'
 import styled from 'styled-components'
 
 import { CharacterContext } from '../../context/character'
-import { fetchCharacter, fetchCharacterComics } from '../../shared/api/fetchers'
 import ComicList from './ComicList/ComicList'
+
+import { fetchCharacter, fetchCharacterComics } from '../../shared/api/fetchers'
+import { Character, Comic } from '../../shared/types/marvel-api'
 
 const CharacterDetailContainer = styled.div`
   display: grid;
@@ -37,7 +39,7 @@ const CharacterDetail = () => {
     try {
       if (!characterId) return
       const character = await fetchCharacter(characterId)
-      setCharacter(character.data.results[0])
+      setCharacter(character.data.results[0] as Character)
     } finally {
       setLoading(false)
     }
@@ -49,7 +51,7 @@ const CharacterDetail = () => {
     try {
       if (!characterId) return
       const comics = await fetchCharacterComics(characterId)
-      setComics(comics.data.results)
+      setComics(comics.data.results as Comic[])
     } finally {
       setLoading(false)
     }
