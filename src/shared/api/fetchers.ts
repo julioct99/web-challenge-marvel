@@ -1,4 +1,8 @@
-import { FAKE_COMIC_LIST_RESPONSE, FAKE_LIST_RESPONSE } from '../../mock-data'
+import {
+  FAKE_COMIC_LIST_RESPONSE,
+  FAKE_DETAIL_RESPONSE,
+  FAKE_LIST_RESPONSE,
+} from '../../mock-data'
 import { CharacterQueryParams, MarvelApiResponse } from '../types/marvel-api'
 import { API } from './settings'
 
@@ -36,16 +40,16 @@ export const fetchCharacters = async (
 }
 
 export const fetchCharacter = async (id: number): Promise<MarvelApiResponse> => {
-  const url = `${API.BASE_URL}/characters/${id}?${getQueryParams()}`
-  const response = await fetch(url)
-  const data = await response.json()
-  return data
+  // const url = `${API.BASE_URL}/characters/${id}?${getQueryParams()}`
+  // const response = await fetch(url)
+  // const data = await response.json()
+  // return data
 
-  // return new Promise((resolve) => {
-  //   setTimeout(() => {
-  //     resolve(FAKE_DETAIL_RESPONSE)
-  //   }, 1000)
-  // })
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(FAKE_DETAIL_RESPONSE)
+    }, 1000)
+  })
 }
 
 export const fetchCharacterComics = async (id: number): Promise<MarvelApiResponse> => {

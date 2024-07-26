@@ -48,6 +48,12 @@ export interface Comic {
   format: string
   pageCount: number
   thumbnail: Thumbnail
+  dates: ComicDate[]
+}
+
+export interface ComicDate {
+  type: string
+  date: string
 }
 
 export interface Thumbnail {
