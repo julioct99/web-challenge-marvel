@@ -90,3 +90,7 @@ export interface Url {
   type: string
   url: string
 }
+
+export interface CharacterQueryParams {
+  nameStartsWith?: string
+}
