@@ -1,8 +1,4 @@
-import {
-  FAKE_COMIC_LIST_RESPONSE,
-  FAKE_DETAIL_RESPONSE,
-  FAKE_LIST_RESPONSE,
-} from '../../mock-data'
+import { FAKE_LIST_RESPONSE } from '../../mock-data'
 import { CharacterQueryParams, MarvelApiResponse } from '../types/marvel-api'
 import { API } from './settings'
 
