@@ -2,11 +2,11 @@ import { useParams } from 'react-router-dom'
 
 import styled from 'styled-components'
 
-import { useCharacter } from '../../context/character'
 import ComicList from './ComicList/ComicList'
-
 import CharacterFavoriteButton from '../../components/CharacterFavoriteButton/CharacterFavoriteButton'
-import { useComics } from '../../context/comics'
+
+import { useCharacter } from '../../shared/hooks/use-character'
+import { useComics } from '../../shared/hooks/use-comics'
 
 const CharacterDetailContainer = styled.div`
   display: grid;

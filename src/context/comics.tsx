@@ -1,11 +1,4 @@
-import {
-  createContext,
-  useState,
-  ReactNode,
-  FunctionComponent,
-  useEffect,
-  useContext,
-} from 'react'
+import { createContext, useState, ReactNode, FunctionComponent } from 'react'
 import { Comic } from '../shared/types/marvel-api'
 import { fetchCharacterComics } from '../shared/api/fetchers'
 
@@ -58,14 +51,3 @@ const ComicsContextProvider: FunctionComponent<ComicsContextProviderProps> = ({
 }
 
 export default ComicsContextProvider
-
-export const useComics = (characterId: number | null) => {
-  const { comics, loadComics, loading, ...rest } = useContext(ComicsContext)
-
-  useEffect(() => {
-    if (!characterId) return
-    loadComics(characterId)
-  }, [characterId])
-
-  return { comics, loading, loadComics, ...rest }
-}

@@ -1,11 +1,4 @@
-import {
-  createContext,
-  useState,
-  ReactNode,
-  FunctionComponent,
-  useEffect,
-  useContext,
-} from 'react'
+import { createContext, useState, ReactNode, FunctionComponent } from 'react'
 import { Character } from '../shared/types/marvel-api'
 import { fetchCharacter } from '../shared/api/fetchers'
 
@@ -60,14 +53,3 @@ const CharacterContextProvider: FunctionComponent<CharacterContextProviderProps>
 }
 
 export default CharacterContextProvider
-
-export const useCharacter = (characterId: number | null) => {
-  const { character, loadCharacter, loading, ...rest } = useContext(CharacterContext)
-
-  useEffect(() => {
-    if (!characterId) return
-    loadCharacter(characterId)
-  }, [characterId])
-
-  return { character, loading, loadCharacter, ...rest }
-}

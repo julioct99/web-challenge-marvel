@@ -1,14 +1,12 @@
-import { useContext } from 'react'
-
 import CharacterCard from '../../components/CharacterCard/CharacterCard'
 import Grid from '../../layout/Grid/Grid'
 import PageContent from '../../layout/PageLayout/PageContent/PageContent'
 import CharacterSearch from './CharacterSearch/CharacterSearch'
 
-import { CharactersContext } from '../../context/characters'
+import { useCharacters } from '../../shared/hooks/use-characters'
 
 const CharacterList = () => {
-  const { characters, loadCharacters, loading } = useContext(CharactersContext)
+  const { characters, loadCharacters, loading } = useCharacters()
 
   const handleSearch = (searchText: string) => {
     loadCharacters({ nameStartsWith: searchText })

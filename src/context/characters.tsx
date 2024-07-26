@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from 'react'
+import { createContext, useState } from 'react'
 
 import { Character, CharacterQueryParams } from '../shared/types/marvel-api'
 import { fetchCharacters } from '../shared/api/fetchers'
@@ -26,10 +26,6 @@ const CharactersContextProvider: React.FunctionComponent<
 > = ({ children }) => {
   const [characters, setCharacters] = useState<Character[]>([])
   const [loading, setLoading] = useState(false)
-
-  useEffect(() => {
-    loadCharacters()
-  }, [])
 
   const loadCharacters = async (params: CharacterQueryParams = {}) => {
     setLoading(true)
