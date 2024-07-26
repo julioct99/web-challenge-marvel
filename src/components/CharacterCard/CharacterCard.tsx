@@ -1,48 +1,77 @@
-import styled from 'styled-components'
-import { Character } from '../../shared/types/marvel-api'
 import { Link } from 'react-router-dom'
 
-interface CharacterCardProps {
-  character: Character
-}
+import styled from 'styled-components'
+
+import { Character } from '../../shared/types/marvel-api'
 
 const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
   align-items: space-between;
-  border: 1px solid #ccc;
-  border-radius: 5px;
   cursor: pointer;
 `
 
 const CardBody = styled.div`
-  padding: 10px;
+  -webkit-clip-path: polygon(
+    100% 0,
+    100% calc(100% - 16px),
+    calc(100% - 16px) 100%,
+    0 100%,
+    0 0
+  );
+  clip-path: polygon(100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%, 0 0);
+  background: black;
+  color: whitesmoke;
+  height: 64px;
+  font-size: 14px;
 `
 
 const Thumbnail = styled.img`
   width: 100%;
   height: 225px;
   object-fit: cover;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 `
+
+const BodyBackgroundContainer = styled.div`
+  background: red;
+  width: 100%;
+  height: 6px;
+  transition: height 0.35s;
+
+  .card-container:hover & {
+    height: 100%;
+  }
+`
+
+const TextContainer = styled.div`
+  padding: 16px;
+`
+
+const CardLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+`
+
+interface CharacterCardProps {
+  character: Character
+}
 
 const CharacterCard: React.FunctionComponent<CharacterCardProps> = ({ character }) => {
   const thumbnail = `${character.thumbnail.path}.${character.thumbnail.extension}`
 
   return (
-    <Link
-      to={`/characters/${character.id}`}
-      style={{ textDecoration: 'none', color: 'inherit' }}
-    >
-      <CardContainer>
+    <CardLink to={`/characters/${character.id}`}>
+      <CardContainer className='card-container'>
         <Thumbnail src={thumbnail} alt={character.name} />
         <CardBody>
-          <span>{character.name}</span>
+          <BodyBackgroundContainer>
+            <TextContainer>
+              <span>{character.name}</span>
+            </TextContainer>
+          </BodyBackgroundContainer>
         </CardBody>
       </CardContainer>
-    </Link>
+    </CardLink>
   )
 }
 
