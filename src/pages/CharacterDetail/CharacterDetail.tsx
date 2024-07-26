@@ -8,6 +8,7 @@ import ComicList from './ComicList/ComicList'
 
 import { fetchCharacter, fetchCharacterComics } from '../../shared/api/fetchers'
 import { Character, Comic } from '../../shared/types/marvel-api'
+import CharacterFavoriteButton from '../../components/CharacterFavoriteButton/CharacterFavoriteButton'
 
 const CharacterDetailContainer = styled.div`
   display: grid;
@@ -36,6 +37,12 @@ const CharacterImage = styled.img`
   height: auto;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+`
+
+const CharacterDetailTitle = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `
 
 const CharacterDetail = () => {
@@ -81,8 +88,6 @@ const CharacterDetail = () => {
     return <p>Character not found</p>
   }
 
-  console.log({ comics })
-
   return (
     <div style={{ borderTop: '1px solid darkgray' }}>
       <div style={{ backgroundColor: 'black' }}>
@@ -95,7 +100,10 @@ const CharacterDetail = () => {
             />
           </div>
           <CharacterDetailBody>
-            <h1>{character.name}</h1>
+            <CharacterDetailTitle>
+              <h1>{character.name}</h1>
+              <CharacterFavoriteButton characterId={character.id} size={32} />
+            </CharacterDetailTitle>
             <p>{character.description}</p>
           </CharacterDetailBody>
         </CharacterDetailContainer>

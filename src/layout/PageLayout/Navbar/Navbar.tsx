@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 
 import styled from 'styled-components'
 
+import FavoriteCounter from './FavoriteCounter/FavoriteCounter'
+
 import marvelLogo from '/marvel-logo.png'
 
 const NavbarContainer = styled.nav`
@@ -22,7 +24,7 @@ const Navbar = () => {
           <img height='100%' src={marvelLogo} alt='Marvel logo' />
         </Link>
       </div>
-      <span>Favorites</span>
+      <FavoriteCounter />
     </NavbarContainer>
   )
 }

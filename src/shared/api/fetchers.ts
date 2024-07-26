@@ -40,29 +40,29 @@ export const fetchCharacters = async (
 }
 
 export const fetchCharacter = async (id: number): Promise<MarvelApiResponse> => {
-  // const url = `${API.BASE_URL}/characters/${id}?${getQueryParams()}`
-  // const response = await fetch(url)
-  // const data = await response.json()
-  // return data
-  console.log(id)
+  const url = `${API.BASE_URL}/characters/${id}?${getQueryParams()}`
+  const response = await fetch(url)
+  const data = await response.json()
+  return data
 
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(FAKE_DETAIL_RESPONSE)
-    }, 1000)
-  })
+  // console.log(id)
+  // return new Promise((resolve) => {
+  //   setTimeout(() => {
+  //     resolve(FAKE_DETAIL_RESPONSE)
+  //   }, 1000)
+  // })
 }
 
 export const fetchCharacterComics = async (id: number): Promise<MarvelApiResponse> => {
-  // const url = `${API.BASE_URL}/characters/${id}/comics?${getQueryParams()}`
-  // const response = await fetch(url)
-  // const data = await response.json()
-  // return data
-  console.log(id)
+  const url = `${API.BASE_URL}/characters/${id}/comics?${getQueryParams()}`
+  const response = await fetch(url)
+  const data = await response.json()
+  return data
 
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(FAKE_COMIC_LIST_RESPONSE)
-    }, 1000)
-  })
+  // console.log(id)
+  // return new Promise((resolve) => {
+  //   setTimeout(() => {
+  //     resolve(FAKE_COMIC_LIST_RESPONSE)
+  //   }, 1000)
+  // })
 }

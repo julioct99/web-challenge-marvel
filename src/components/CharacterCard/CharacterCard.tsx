@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 
 import styled from 'styled-components'
 
+import CharacterFavoriteButton from '../CharacterFavoriteButton/CharacterFavoriteButton'
+
 import { Character } from '../../shared/types/marvel-api'
 
 const CardContainer = styled.div`
@@ -37,15 +39,18 @@ const BodyBackgroundContainer = styled.div`
   background: red;
   width: 100%;
   height: 6px;
-  transition: height 0.35s;
+  transition: height 0.25s ease-in-out;
 
   .card-container:hover & {
     height: 100%;
   }
 `
 
-const TextContainer = styled.div`
+const NameContainer = styled.div`
   padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `
 
 const CardLink = styled(Link)`
@@ -58,7 +63,8 @@ interface CharacterCardProps {
 }
 
 const CharacterCard: React.FunctionComponent<CharacterCardProps> = ({ character }) => {
-  const thumbnail = `${character.thumbnail.path}.${character.thumbnail.extension}`
+  const { path, extension } = character.thumbnail
+  const thumbnail = `${path}.${extension}`
 
   return (
     <CardLink to={`/characters/${character.id}`}>
@@ -66,9 +72,10 @@ const CharacterCard: React.FunctionComponent<CharacterCardProps> = ({ character 
         <Thumbnail src={thumbnail} alt={character.name} />
         <CardBody>
           <BodyBackgroundContainer>
-            <TextContainer>
+            <NameContainer>
               <span>{character.name}</span>
-            </TextContainer>
+              <CharacterFavoriteButton size={14} characterId={character.id} />
+            </NameContainer>
           </BodyBackgroundContainer>
         </CardBody>
       </CardContainer>

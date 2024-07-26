@@ -1,6 +1,10 @@
 import { useRef } from 'react'
+
 import styled from 'styled-components'
+
 import ResultCountDisplay from './ResultCountDisplay/ResultCountDisplay'
+
+import searchIcon from '/search_icon.png'
 
 interface SearchbarProps {
   onSearch: (searchText: string) => void
@@ -60,7 +64,9 @@ const Searchbar: React.FunctionComponent<SearchbarProps> = ({
   return (
     <SectionContainer>
       <SearchContainer>
-        <SearchIcon>(icon)</SearchIcon>
+        <SearchIcon>
+          <img src={searchIcon} alt='Search icon' />
+        </SearchIcon>
         <SearchInput
           type='text'
           ref={inputRef}
