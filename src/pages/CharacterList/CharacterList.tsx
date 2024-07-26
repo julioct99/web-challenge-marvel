@@ -8,7 +8,7 @@ import { CharactersContext } from '../../context/characters'
 import PageContent from '../../layout/PageLayout/PageContent/PageContent'
 
 import { fetchCharacters } from '../../shared/api/fetchers'
-import { CharacterQueryParams } from '../../shared/types/marvel-api'
+import { Character, CharacterQueryParams } from '../../shared/types/marvel-api'
 
 const CharacterList = () => {
   const [loading, setLoading] = useState(false)
@@ -22,7 +22,7 @@ const CharacterList = () => {
     setLoading(true)
     try {
       const characters = await fetchCharacters(params)
-      setCharacters(characters.data.results)
+      setCharacters(characters.data.results as Character[])
     } finally {
       setLoading(false)
     }

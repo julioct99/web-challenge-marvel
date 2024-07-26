@@ -44,6 +44,7 @@ export const fetchCharacter = async (id: number): Promise<MarvelApiResponse> => 
   // const response = await fetch(url)
   // const data = await response.json()
   // return data
+  console.log(id)
 
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -57,6 +58,7 @@ export const fetchCharacterComics = async (id: number): Promise<MarvelApiRespons
   // const response = await fetch(url)
   // const data = await response.json()
   // return data
+  console.log(id)
 
   return new Promise((resolve) => {
     setTimeout(() => {
