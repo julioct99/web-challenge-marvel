@@ -2,40 +2,63 @@ import styled from 'styled-components'
 
 import { Comic } from '../../../shared/types/marvel-api'
 import ComicCard from './ComicCard/ComicCard'
+import ScrollContainer from 'react-indiana-drag-scroll'
 
 interface ComicListProps {
   comics: Comic[]
 }
 
+const PageContentContainer = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+`
+
 const ComicCarousel = styled.div`
-  display: flex;
-  overflow: auto;
-  gap: 24px;
+  width: 100%;
 
-  &::-webkit-scrollbar {
-    background-color: #f1f1f1;
-    height: 6px;
-  }
+  .scroll-container {
+    display: flex;
+    gap: 24px;
 
-  &::-webkit-scrollbar-thumb {
-    background-color: red;
-  }
+    &:hover {
+      cursor: grab;
+    }
 
-  &::-webkit-scrollbar-thumb:hover {
-    cursor: pointer;
+    &.scroll-dragging {
+      cursor: grabbing !important;
+    }
+
+    &::-webkit-scrollbar {
+      background-color: #f1f1f1;
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: red;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 `
 
 const ComicList: React.FunctionComponent<ComicListProps> = ({ comics }) => {
   return (
-    <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+    <PageContentContainer>
       <h2>Comics</h2>
       <ComicCarousel>
-        {comics.map((comic) => (
-          <ComicCard key={comic.id} comic={comic} />
-        ))}
+        <ScrollContainer
+          className='scroll-container'
+          draggingClassName='scroll-dragging'
+          hideScrollbars={false}
+        >
+          {comics.map((comic) => (
+            <ComicCard key={comic.id} comic={comic} />
+          ))}
+        </ScrollContainer>
       </ComicCarousel>
-    </div>
+    </PageContentContainer>
   )
 }
 
