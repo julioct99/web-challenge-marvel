@@ -29,6 +29,7 @@ const CharacterFavoriteButton: React.FunctionComponent<CharacterFavoriteButtonPr
 }) => {
   const { favoriteCharacters, addFavoriteCharacter, removeFavoriteCharacter } =
     useContext(favoriteCharactersContext)
+
   const isFavorite = favoriteCharacters.includes(characterId)
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {

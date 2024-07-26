@@ -2,8 +2,6 @@ import { useRef } from 'react'
 
 import styled from 'styled-components'
 
-import ResultCountDisplay from './ResultCountDisplay/ResultCountDisplay'
-
 import searchIcon from '/search_icon.png'
 
 interface SearchbarProps {
@@ -35,14 +33,6 @@ const SearchInput = styled.input`
   }
 `
 
-const SectionContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 8px;
-  margin-bottom: 20px;
-`
-
 const Searchbar: React.FunctionComponent<SearchbarProps> = ({
   onSearch = () => {},
   placeholder = undefined,
@@ -62,20 +52,17 @@ const Searchbar: React.FunctionComponent<SearchbarProps> = ({
   }
 
   return (
-    <SectionContainer>
-      <SearchContainer>
-        <SearchIcon>
-          <img src={searchIcon} alt='Search icon' />
-        </SearchIcon>
-        <SearchInput
-          type='text'
-          ref={inputRef}
-          onKeyDown={handleKeyDown}
-          placeholder={(placeholder || 'Search...').toUpperCase()}
-        />
-      </SearchContainer>
-      <ResultCountDisplay resultCount={50} />
-    </SectionContainer>
+    <SearchContainer>
+      <SearchIcon>
+        <img src={searchIcon} alt='Search icon' />
+      </SearchIcon>
+      <SearchInput
+        type='text'
+        ref={inputRef}
+        onKeyDown={handleKeyDown}
+        placeholder={(placeholder || 'Search...').toUpperCase()}
+      />
+    </SearchContainer>
   )
 }
 

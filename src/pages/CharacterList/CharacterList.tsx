@@ -1,7 +1,6 @@
 import { useContext, useEffect, useState } from 'react'
 
 import CharacterCard from '../../components/CharacterCard/CharacterCard'
-import Searchbar from '../../components/Searchbar/Searchbar'
 import Grid from '../../layout/Grid/Grid'
 
 import { CharactersContext } from '../../context/characters'
@@ -9,6 +8,7 @@ import PageContent from '../../layout/PageLayout/PageContent/PageContent'
 
 import { fetchCharacters } from '../../shared/api/fetchers'
 import { Character, CharacterQueryParams } from '../../shared/types/marvel-api'
+import CharacterSearch from './CharacterSearch/CharacterSearch'
 
 const CharacterList = () => {
   const [loading, setLoading] = useState(false)
@@ -48,7 +48,7 @@ const CharacterList = () => {
 
   return (
     <PageContent>
-      <Searchbar onSearch={handleSearch} placeholder='Search a character...' />
+      <CharacterSearch onSearch={handleSearch} />
       {renderContent()}
     </PageContent>
   )
