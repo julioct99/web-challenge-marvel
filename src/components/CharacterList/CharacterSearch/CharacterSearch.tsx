@@ -1,11 +1,9 @@
-import { useContext } from 'react'
-
 import styled from 'styled-components'
 
 import Searchbar from '../../../shared/components/Searchbar/Searchbar'
 import ResultCountDisplay from '../../../shared/components/Searchbar/ResultCountDisplay/ResultCountDisplay'
 
-import { CharactersContext } from '../../../context/characters'
+import { Character } from '../../../shared/types/marvel-api'
 
 const SectionContainer = styled.div`
   display: flex;
@@ -17,11 +15,13 @@ const SectionContainer = styled.div`
 
 interface CharacterSearchProps {
   onSearch: (searchText: string) => void
+  characters: Character[]
 }
 
-const CharacterSearch: React.FunctionComponent<CharacterSearchProps> = ({ onSearch }) => {
-  const { characters } = useContext(CharactersContext)
-
+const CharacterSearch: React.FunctionComponent<CharacterSearchProps> = ({
+  onSearch,
+  characters = [],
+}) => {
   return (
     <SectionContainer>
       <Searchbar onSearch={onSearch} placeholder='Search a character...' />
