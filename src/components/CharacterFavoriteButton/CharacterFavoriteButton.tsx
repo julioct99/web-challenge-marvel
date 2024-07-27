@@ -2,7 +2,7 @@ import { useContext } from 'react'
 
 import styled from 'styled-components'
 
-import { favoriteCharactersContext } from '../../context/favorite-characters'
+import { FavoriteCharactersContext } from '../../context/favorite-characters'
 import { Character } from '../../shared/types/marvel-api'
 
 import heart_icon from '/heart_icon.png'
@@ -29,7 +29,7 @@ const CharacterFavoriteButton: React.FunctionComponent<CharacterFavoriteButtonPr
   size,
 }) => {
   const { favoriteCharacters, addFavoriteCharacter, removeFavoriteCharacter } =
-    useContext(favoriteCharactersContext)
+    useContext(FavoriteCharactersContext)
 
   const isFavorite = favoriteCharacters.some((c) => c.id === character.id)
 

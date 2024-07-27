@@ -6,14 +6,14 @@ import { Character } from '../../shared/types/marvel-api'
 
 interface CharacterListProps {
   characters: Character[]
-  loading: boolean
   onSearch: (searchText: string) => void
+  loading?: boolean
 }
 
 const CharacterList: React.FunctionComponent<CharacterListProps> = ({
   characters,
-  loading = false,
   onSearch,
+  loading = false,
 }) => {
   const renderContent = () => {
     if (loading) return <p>Loading...</p>

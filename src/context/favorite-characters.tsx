@@ -10,7 +10,7 @@ interface CharacterContext {
   removeFavoriteCharacter: (id: number) => void
 }
 
-export const favoriteCharactersContext = createContext<CharacterContext>({
+export const FavoriteCharactersContext = createContext<CharacterContext>({
   favoriteCharacters: [],
   addFavoriteCharacter: () => {},
   removeFavoriteCharacter: () => {},
@@ -62,9 +62,9 @@ const FavoriteCharactersContextProvider: React.FunctionComponent<
   }
 
   return (
-    <favoriteCharactersContext.Provider value={getContextValue()}>
+    <FavoriteCharactersContext.Provider value={getContextValue()}>
       {children}
-    </favoriteCharactersContext.Provider>
+    </FavoriteCharactersContext.Provider>
   )
 }
 
