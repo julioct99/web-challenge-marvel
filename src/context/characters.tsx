@@ -29,6 +29,8 @@ const CharactersContextProvider: React.FunctionComponent<
 
   const loadCharacters = async (params: CharacterQueryParams = {}) => {
     setLoading(true)
+    setCharacters([])
+
     try {
       const characters = await fetchCharacters(params)
       setCharacters(characters.data.results as Character[])

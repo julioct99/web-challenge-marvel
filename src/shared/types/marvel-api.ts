@@ -117,4 +117,9 @@ export interface Url {
 
 export interface CharacterQueryParams {
   nameStartsWith?: string
+  limit?: string
+  orderBy?: string
+  apiKey?: string
+  ts?: string
+  hash?: string
 }

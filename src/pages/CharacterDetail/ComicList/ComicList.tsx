@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 import { Comic } from '../../../shared/types/marvel-api'
 import ComicCard from './ComicCard/ComicCard'
-import ScrollContainer from 'react-indiana-drag-scroll'
 
 interface ComicListProps {
   comics: Comic[]
@@ -16,30 +15,20 @@ const PageContentContainer = styled.div`
 
 const ComicCarousel = styled.div`
   width: 100%;
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
 
-  .scroll-container {
-    display: flex;
-    gap: 24px;
+  &::-webkit-scrollbar {
+    background-color: #f1f1f1;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: red;
 
     &:hover {
-      cursor: grab;
-    }
-
-    &.scroll-dragging {
-      cursor: grabbing !important;
-    }
-
-    &::-webkit-scrollbar {
-      background-color: #f1f1f1;
-      height: 8px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: red;
-
-      &:hover {
-        cursor: pointer;
-      }
+      cursor: pointer;
     }
   }
 `
@@ -56,15 +45,9 @@ const ComicList: React.FunctionComponent<ComicListProps> = ({
     <PageContentContainer>
       <h2>Comics</h2>
       <ComicCarousel>
-        <ScrollContainer
-          className='scroll-container'
-          draggingClassName='scroll-dragging'
-          hideScrollbars={false}
-        >
-          {comics.map((comic) => (
-            <ComicCard key={comic.id} comic={comic} />
-          ))}
-        </ScrollContainer>
+        {comics.map((comic) => (
+          <ComicCard key={comic.id} comic={comic} />
+        ))}
       </ComicCarousel>
     </PageContentContainer>
   )

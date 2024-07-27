@@ -1,38 +1,36 @@
-import { FAKE_LIST_RESPONSE } from '../../mock-data'
 import { CharacterQueryParams, MarvelApiResponse } from '../types/marvel-api'
 import { API } from './settings'
-
-const DEFAULT_QUERY_PARAMS = {
-  orderBy: 'modified',
-}
 
 const getQueryParams = (params: CharacterQueryParams = {}): string => {
   const { PUBLIC_KEY, TS, HASH } = API
 
-  return new URLSearchParams({
-    ...DEFAULT_QUERY_PARAMS,
+  const queryParams = {
     ...params,
     apikey: PUBLIC_KEY,
     ts: TS,
     hash: HASH,
-  }).toString()
+  }
+
+  return new URLSearchParams(queryParams).toString()
 }
 
 export const fetchCharacters = async (
   params: CharacterQueryParams = {}
 ): Promise<MarvelApiResponse> => {
-  if (params.nameStartsWith) {
-    const url = `${API.BASE_URL}/characters?${getQueryParams(params)}`
-    const response = await fetch(url)
-    const data = await response.json()
-    return data
-  }
+  const url = `${API.BASE_URL}/characters?${getQueryParams({
+    ...params,
+    limit: '50',
+    orderBy: 'modified',
+  })}`
+  const response = await fetch(url)
+  const data = await response.json()
+  return data
 
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(FAKE_LIST_RESPONSE)
-    }, 1000)
-  })
+  // return new Promise((resolve) => {
+  //   setTimeout(() => {
+  //     resolve(FAKE_LIST_RESPONSE)
+  //   }, 1000)
+  // })
 }
 
 export const fetchCharacter = async (id: number): Promise<MarvelApiResponse> => {
@@ -50,7 +48,9 @@ export const fetchCharacter = async (id: number): Promise<MarvelApiResponse> => 
 }
 
 export const fetchCharacterComics = async (id: number): Promise<MarvelApiResponse> => {
-  const url = `${API.BASE_URL}/characters/${id}/comics?${getQueryParams()}`
+  const url = `${API.BASE_URL}/characters/${id}/comics?${getQueryParams({
+    orderBy: '-onsaleDate',
+  })}`
   const response = await fetch(url)
   const data = await response.json()
   return data

@@ -12,8 +12,10 @@ const CardBody = styled.div`
 
 const ComicCard: React.FunctionComponent<ComicProps> = ({ comic }) => {
   const getReleaseYear = () => {
-    const dateObj = new Date(comic.dates[0].date)
-    return dateObj.getFullYear()
+    const comicDates = comic.dates || []
+    const onSaleDate = comicDates.find((d) => d.type === 'onsaleDate')
+    const dateObj = onSaleDate ? new Date(onSaleDate.date) : null
+    return dateObj?.getFullYear() || 'Unknown'
   }
 
   return (
