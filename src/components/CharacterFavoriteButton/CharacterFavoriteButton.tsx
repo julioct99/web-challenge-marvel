@@ -3,6 +3,7 @@ import { useContext } from 'react'
 import styled from 'styled-components'
 
 import { favoriteCharactersContext } from '../../context/favorite-characters'
+import { Character } from '../../shared/types/marvel-api'
 
 import heart_icon from '/heart_icon.png'
 import heart_icon_empty from '/heart_icon_white.png'
@@ -19,24 +20,24 @@ const ButtonContainer = styled.button`
 `
 
 interface CharacterFavoriteButtonProps {
-  characterId: number
+  character: Character
   size?: number
 }
 
 const CharacterFavoriteButton: React.FunctionComponent<CharacterFavoriteButtonProps> = ({
-  characterId,
+  character,
   size,
 }) => {
   const { favoriteCharacters, addFavoriteCharacter, removeFavoriteCharacter } =
     useContext(favoriteCharactersContext)
 
-  const isFavorite = favoriteCharacters.includes(characterId)
+  const isFavorite = favoriteCharacters.some((c) => c.id === character.id)
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation()
     e.preventDefault()
 
-    isFavorite ? removeFavoriteCharacter(characterId) : addFavoriteCharacter(characterId)
+    isFavorite ? removeFavoriteCharacter(character.id) : addFavoriteCharacter(character)
   }
 
   const src = isFavorite ? heart_icon : heart_icon_empty

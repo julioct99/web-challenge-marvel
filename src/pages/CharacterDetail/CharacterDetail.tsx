@@ -72,7 +72,7 @@ const CharacterDetail = () => {
           <CharacterDetailBody>
             <CharacterDetailTitle>
               <h1>{character.name}</h1>
-              <CharacterFavoriteButton characterId={character.id} size={32} />
+              <CharacterFavoriteButton character={character} size={32} />
             </CharacterDetailTitle>
             <p>{character.description}</p>
           </CharacterDetailBody>

@@ -1,10 +1,12 @@
 import { createContext, useEffect, useState } from 'react'
 
+import { Character } from '../shared/types/marvel-api'
+
 const LOCAL_STORAGE_KEY = 'favoriteCharacters'
 
 interface CharacterContext {
-  favoriteCharacters: number[]
-  addFavoriteCharacter: (id: number) => void
+  favoriteCharacters: Character[]
+  addFavoriteCharacter: (character: Character) => void
   removeFavoriteCharacter: (id: number) => void
 }
 
@@ -21,25 +23,25 @@ interface FavoriteCharactersContextProviderProps {
 const FavoriteCharactersContextProvider: React.FunctionComponent<
   FavoriteCharactersContextProviderProps
 > = ({ children }) => {
-  const [favoriteCharacters, setFavoriteCharacters] = useState<number[]>([])
+  const [favoriteCharacters, setFavoriteCharacters] = useState<Character[]>([])
 
   useEffect(() => {
     loadFavoriteCharacters()
   }, [])
 
-  const addFavoriteCharacter = (id: number) => {
-    if (favoriteCharacters.includes(id)) return
+  const addFavoriteCharacter = (character: Character) => {
+    if (favoriteCharacters.find((c) => c.id === character.id)) return
 
-    const newFavoriteCharacters = [...favoriteCharacters, id]
+    const newFavoriteCharacters = [...favoriteCharacters, character]
     updateFavoriteList(newFavoriteCharacters)
   }
 
   const removeFavoriteCharacter = (id: number) => {
-    const newFavoriteCharacters = favoriteCharacters.filter((c) => c !== id)
+    const newFavoriteCharacters = favoriteCharacters.filter((c) => c.id !== id)
     updateFavoriteList(newFavoriteCharacters)
   }
 
-  const updateFavoriteList = (favoriteCharacters: number[]) => {
+  const updateFavoriteList = (favoriteCharacters: Character[]) => {
     setFavoriteCharacters(favoriteCharacters)
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(favoriteCharacters))
   }

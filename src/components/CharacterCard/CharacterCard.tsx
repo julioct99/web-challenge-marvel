@@ -74,7 +74,7 @@ const CharacterCard: React.FunctionComponent<CharacterCardProps> = ({ character 
           <BodyBackgroundContainer>
             <NameContainer>
               <span>{character.name}</span>
-              <CharacterFavoriteButton size={14} characterId={character.id} />
+              <CharacterFavoriteButton size={14} character={character} />
             </NameContainer>
           </BodyBackgroundContainer>
         </CardBody>
