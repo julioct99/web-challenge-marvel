@@ -7,6 +7,7 @@ import CharacterFavoriteButton from '../../components/CharacterFavoriteButton/Ch
 
 import { useCharacter } from '../../shared/hooks/use-character'
 import { useComics } from '../../shared/hooks/use-comics'
+import Loading from '../../shared/components/Loading/Loading'
 
 const CharacterDetailContainer = styled.div`
   display: grid;
@@ -51,7 +52,7 @@ const CharacterDetail = () => {
   const { comics, loading: comicsAreLoading } = useComics(characterId)
 
   if (characterIsLoading) {
-    return <p>Loading...</p>
+    return <Loading />
   }
 
   if (!character) {

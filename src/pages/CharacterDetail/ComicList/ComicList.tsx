@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 import { Comic } from '../../../shared/types/marvel-api'
 import ComicCard from './ComicCard/ComicCard'
+import Loading from '../../../shared/components/Loading/Loading'
 
 interface ComicListProps {
   comics: Comic[]
@@ -38,7 +39,7 @@ const ComicList: React.FunctionComponent<ComicListProps> = ({
   loading = false,
 }) => {
   if (loading) {
-    return <p>Loading...</p>
+    return <Loading />
   }
 
   return (
