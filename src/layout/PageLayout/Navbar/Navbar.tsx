@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 import styled from 'styled-components'
 
-import FavoriteCounter from './FavoriteCounter/FavoriteCounter'
+import FavoriteCounter from './FavoriteCounter'
 
 import marvelLogo from '/marvel-logo.png'
 

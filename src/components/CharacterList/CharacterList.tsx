@@ -1,9 +1,9 @@
-import Grid from '../../layout/Grid/Grid'
 import CharacterCard from '../CharacterCard/CharacterCard'
 import CharacterSearch from './CharacterSearch/CharacterSearch'
+import Grid from '../../layout/Grid'
+import Loading from '../../shared/components/Loading'
 
 import { Character } from '../../shared/types/marvel-api'
-import Loading from '../../shared/components/Loading/Loading'
 
 interface CharacterListProps {
   characters: Character[]

@@ -1,5 +1,5 @@
 import CharacterList from '../../components/CharacterList/CharacterList'
-import PageContent from '../../layout/PageLayout/PageContent/PageContent'
+import PageContent from '../../layout/PageLayout/PageContent'
 
 import { useCharacters } from '../../shared/hooks/use-characters'
 

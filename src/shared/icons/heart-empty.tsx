@@ -1,4 +1,5 @@
-import SvgIcon, { IconProps } from '../components/SvgIcon/SvgIcon'
+import SvgIcon from '../components/SvgIcon'
+import { IconProps } from '../components/SvgIcon/SvgIcon'
 
 const HeartEmpty: React.FunctionComponent<IconProps> = ({ size }) => {
   return (

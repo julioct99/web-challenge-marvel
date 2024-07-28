@@ -1,10 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
 
-import PageLayout from './layout/PageLayout/PageLayout'
-import Characters from './pages/Characters/Characters'
-import CharacterDetail from './pages/CharacterDetail/CharacterDetail'
 import ContextProviders from './components/ContextProviders/ContextProviders'
-import FavoriteCharacters from './pages/FavoriteCharacters/FavoriteCharacters'
+import PageLayout from './layout/PageLayout'
+import { CharacterDetail, Characters, FavoriteCharacters } from './pages'
 
 function App() {
   return (

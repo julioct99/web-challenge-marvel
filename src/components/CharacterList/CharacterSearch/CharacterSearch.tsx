@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-import Searchbar from '../../../shared/components/Searchbar/Searchbar'
-import ResultCountDisplay from '../../../shared/components/Searchbar/ResultCountDisplay/ResultCountDisplay'
+import ResultCountDisplay from '../../../shared/components/ResultCountDisplay'
+import Searchbar from '../../../shared/components/Searchbar'
 
 import { Character } from '../../../shared/types/marvel-api'
 
