@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 import { Comic } from '../../../shared/types/marvel-api'
 
 interface ComicProps {

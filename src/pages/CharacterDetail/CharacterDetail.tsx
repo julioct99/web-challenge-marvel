@@ -2,8 +2,8 @@ import { useParams } from 'react-router-dom'
 
 import styled from 'styled-components'
 
-import ComicList from '../../components/ComicList/ComicList'
-import CharacterFavoriteButton from '../../components/CharacterFavoriteButton/CharacterFavoriteButton'
+import ComicList from '../../components/ComicList'
+import CharacterFavoriteButton from '../../components/CharacterFavoriteButton'
 
 import { useCharacter } from '../../shared/hooks/use-character'
 import { useComics } from '../../shared/hooks/use-comics'

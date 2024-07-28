@@ -1,8 +1,9 @@
 import { useContext, useState } from 'react'
 
-import { FavoriteCharactersContext } from '../../context/favorite-characters'
-import CharacterList from '../../components/CharacterList/CharacterList'
 import PageContent from '../../layout/PageLayout/PageContent'
+import CharacterList from '../../components/CharacterList'
+
+import { FavoriteCharactersContext } from '../../context/favorite-characters'
 
 const FavoriteCharacters = () => {
   const [searchText, setSearchText] = useState('')

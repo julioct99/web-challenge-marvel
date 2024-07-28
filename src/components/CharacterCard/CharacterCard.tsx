@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 import styled from 'styled-components'
 
-import CharacterFavoriteButton from '../CharacterFavoriteButton/CharacterFavoriteButton'
+import CharacterFavoriteButton from '../CharacterFavoriteButton'
 
 import { Character } from '../../shared/types/marvel-api'
 

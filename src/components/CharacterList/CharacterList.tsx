@@ -1,7 +1,7 @@
-import CharacterCard from '../CharacterCard/CharacterCard'
-import CharacterSearch from './CharacterSearch/CharacterSearch'
+import CharacterSearch from './CharacterSearch'
 import Grid from '../../layout/Grid'
 import Loading from '../../shared/components/Loading'
+import CharacterCard from '../CharacterCard'
 
 import { Character } from '../../shared/types/marvel-api'
 

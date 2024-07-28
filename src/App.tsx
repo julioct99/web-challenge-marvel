@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 
-import ContextProviders from './components/ContextProviders/ContextProviders'
+import ContextProviders from './components/ContextProviders'
 import PageLayout from './layout/PageLayout'
 import { CharacterDetail, Characters, FavoriteCharacters } from './pages'
 

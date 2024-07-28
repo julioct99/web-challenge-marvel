@@ -1,4 +1,4 @@
-import CharacterList from '../../components/CharacterList/CharacterList'
+import CharacterList from '../../components/CharacterList'
 import PageContent from '../../layout/PageLayout/PageContent'
 
 import { useCharacters } from '../../shared/hooks/use-characters'

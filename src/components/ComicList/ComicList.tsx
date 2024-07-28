@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-import ComicCard from './ComicCard/ComicCard'
 import Loading from '../../shared/components/Loading'
 
 import { Comic } from '../../shared/types/marvel-api'
+import ComicCard from './ComicCard'
 
 interface ComicListProps {
   comics: Comic[]
