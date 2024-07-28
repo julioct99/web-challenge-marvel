@@ -1,48 +1,17 @@
 import { useParams } from 'react-router-dom'
 
-import styled from 'styled-components'
-
 import ComicList from '../../components/ComicList'
 import CharacterFavoriteButton from '../../components/CharacterFavoriteButton'
 
 import { useCharacter } from '../../shared/hooks/use-character'
 import { useComics } from '../../shared/hooks/use-comics'
 import Loading from '../../shared/components/Loading'
-
-const CharacterDetailContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  background-color: black;
-  color: white;
-  max-width: 1200px;
-  margin: 0 auto;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-
-    .character-image {
-      width: '100%';
-      height: 'auto';
-    }
-  }
-`
-
-const CharacterDetailBody = styled.div`
-  padding: 32px;
-`
-
-const CharacterImage = styled.img`
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-`
-
-const CharacterDetailTitle = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`
+import {
+  CharacterDetailContainer,
+  CharacterImage,
+  CharacterDetailBody,
+  CharacterDetailTitle,
+} from './styles'
 
 const CharacterDetail = () => {
   const params = useParams()

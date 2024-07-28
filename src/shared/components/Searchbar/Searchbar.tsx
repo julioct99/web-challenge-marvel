@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 
-import styled from 'styled-components'
+import { SearchContainer, SearchIcon, SearchInput } from './styles'
 
 import searchIcon from '/search_icon.png'
 
@@ -8,30 +8,6 @@ interface SearchbarProps {
   onSearch: (searchText: string) => void
   placeholder?: string
 }
-
-const SearchContainer = styled.div`
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid black;
-  width: 100%;
-  padding-bottom: 5px;
-`
-
-const SearchIcon = styled('span')`
-  margin-right: 10px;
-  font-size: 18px;
-`
-
-const SearchInput = styled.input`
-  border: none;
-  outline: none;
-  width: 100%;
-  font-size: 16px;
-
-  ::placeholder {
-    color: #999;
-  }
-`
 
 const Searchbar: React.FunctionComponent<SearchbarProps> = ({
   onSearch = () => {},

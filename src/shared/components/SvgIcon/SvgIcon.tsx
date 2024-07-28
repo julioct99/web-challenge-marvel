@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import { IconContainer } from './styles'
 
 export interface IconProps {
   size?: number
@@ -7,15 +7,6 @@ export interface IconProps {
 interface SvgIconProps extends IconProps, React.SVGProps<SVGSVGElement> {
   children: React.ReactNode
 }
-
-interface IconContainerProps {
-  size?: number
-}
-
-const IconContainer = styled.svg<IconContainerProps>`
-  transition: all 0.25s ease-in-out;
-  width: ${(props) => (props.size ? `${props.size}px` : '16px')};
-`
 
 const SvgIcon: React.FunctionComponent<SvgIconProps> = ({ size, children, ...props }) => {
   return (

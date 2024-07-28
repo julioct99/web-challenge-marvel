@@ -1,20 +1,9 @@
-import styled from 'styled-components'
+import { useContext } from 'react'
+
+import { FavoriteCharactersContext } from '../../../../context/favorite-characters'
+import { FavoriteCounterContainer, LinkContainer } from './styles'
 
 import heart_icon from '/heart_icon.png'
-import { useContext } from 'react'
-import { Link } from 'react-router-dom'
-import { FavoriteCharactersContext } from '../../../../context/favorite-characters'
-
-const LinkContainer = styled(Link)`
-  text-decoration: none;
-  color: inherit;
-`
-
-const FavoriteCounterContainer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 8px;
-`
 
 const FavoriteCounter = () => {
   const { favoriteCharacters } = useContext(FavoriteCharactersContext)

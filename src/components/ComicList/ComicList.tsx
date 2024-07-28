@@ -1,39 +1,13 @@
-import styled from 'styled-components'
-
 import Loading from '../../shared/components/Loading'
+import ComicCard from './ComicCard'
 
 import { Comic } from '../../shared/types/marvel-api'
-import ComicCard from './ComicCard'
+import { ComicCarousel, PageContentContainer } from './styles'
 
 interface ComicListProps {
   comics: Comic[]
   loading: boolean
 }
-
-const PageContentContainer = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-`
-
-const ComicCarousel = styled.div`
-  width: 100%;
-  display: flex;
-  gap: 24px;
-  overflow-x: auto;
-
-  &::-webkit-scrollbar {
-    background-color: var(--bg-color);
-    height: 8px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--primary-color);
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-`
 
 const ComicList: React.FunctionComponent<ComicListProps> = ({
   comics,

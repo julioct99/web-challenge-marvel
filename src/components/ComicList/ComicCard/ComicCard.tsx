@@ -1,15 +1,9 @@
-import styled from 'styled-components'
-
 import { Comic } from '../../../shared/types/marvel-api'
+import { CardBody } from './styles'
 
 interface ComicProps {
   comic: Comic
 }
-
-const CardBody = styled.div`
-  display: flex;
-  flex-direction: column;
-`
 
 const ComicCard: React.FunctionComponent<ComicProps> = ({ comic }) => {
   const getReleaseYear = () => {

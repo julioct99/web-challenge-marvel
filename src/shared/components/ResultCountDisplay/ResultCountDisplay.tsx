@@ -1,12 +1,8 @@
-import styled from 'styled-components'
+import { ResultContainer } from './styles'
 
 interface ResultCountDisplayProps {
   resultCount: number
 }
-
-const ResultContainer = styled.small`
-  font-size: 12px;
-`
 
 const ResultCountDisplay: React.FunctionComponent<ResultCountDisplayProps> = ({
   resultCount,
