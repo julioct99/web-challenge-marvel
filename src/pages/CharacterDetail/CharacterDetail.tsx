@@ -60,7 +60,7 @@ const CharacterDetail = () => {
   }
 
   return (
-    <div style={{ borderTop: '1px solid darkgray' }}>
+    <>
       <div style={{ backgroundColor: 'black' }}>
         <CharacterDetailContainer>
           <div>
@@ -81,7 +81,7 @@ const CharacterDetail = () => {
       </div>
 
       <ComicList comics={comics} loading={comicsAreLoading} />
-    </div>
+    </>
   )
 }
 

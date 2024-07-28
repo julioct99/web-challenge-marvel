@@ -14,16 +14,10 @@ const CardContainer = styled.div`
 `
 
 const CardBody = styled.div`
-  -webkit-clip-path: polygon(
-    100% 0,
-    100% calc(100% - 16px),
-    calc(100% - 16px) 100%,
-    0 100%,
-    0 0
-  );
-  clip-path: polygon(100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%, 0 0);
-  background: black;
-  color: whitesmoke;
+  -webkit-clip-path: var(--dent-clip-path);
+  clip-path: var(--dent-clip-path);
+  background: var(--secondary-color);
+  color: var(--text-color-light);
   height: 64px;
   font-size: 14px;
 `
@@ -36,7 +30,7 @@ const Thumbnail = styled.img`
 `
 
 const BodyBackgroundContainer = styled.div`
-  background: red;
+  background-color: var(--primary-color);
   width: 100%;
   height: 6px;
   transition: height 0.25s ease-in-out;

@@ -2,11 +2,11 @@ import { useContext } from 'react'
 
 import styled from 'styled-components'
 
+import Heart from '../../shared/icons/heart'
+import HeartEmpty from '../../shared/icons/heart-empty'
+
 import { FavoriteCharactersContext } from '../../context/favorite-characters'
 import { Character } from '../../shared/types/marvel-api'
-
-import heart_icon from '/heart_icon.png'
-import heart_icon_empty from '/heart_icon_white.png'
 
 const ButtonContainer = styled.button`
   background: none;
@@ -15,7 +15,13 @@ const ButtonContainer = styled.button`
   transition: all 0.25s ease-in-out;
 
   .card-container: hover & {
-    filter: invert(1);
+    .heart-icon {
+      fill: var(--text-color-light);
+    }
+
+    .heart-icon-empty {
+      fill: var(--text-color-dark);
+    }
   }
 `
 
@@ -40,11 +46,9 @@ const CharacterFavoriteButton: React.FunctionComponent<CharacterFavoriteButtonPr
     isFavorite ? removeFavoriteCharacter(character.id) : addFavoriteCharacter(character)
   }
 
-  const src = isFavorite ? heart_icon : heart_icon_empty
-
   return (
     <ButtonContainer onClick={handleClick} className='favorite-button'>
-      <img src={src} height={size} alt='Button' />
+      {isFavorite ? <Heart size={size} /> : <HeartEmpty size={size} />}
     </ButtonContainer>
   )
 }

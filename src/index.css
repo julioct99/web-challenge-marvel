@@ -4,6 +4,16 @@
   --primary-color: #ed1d24;
   --secondary-color: #000;
   --bg-color: #cccccc;
+  --text-color-light: #fff;
+  --text-color-dark: #000;
+
+  --dent-clip-path: polygon(
+    100% 0,
+    100% calc(100% - 16px),
+    calc(100% - 16px) 100%,
+    0 100%,
+    0 0
+  );
 }
 
 html,

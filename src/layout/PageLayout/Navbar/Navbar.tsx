@@ -12,18 +12,27 @@ const NavbarContainer = styled.nav`
   align-items: center;
   padding: 16px 64px;
   height: 50px;
-  background-color: black;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--text-color-light);
+  border-bottom: 1px solid var(--bg-color);
+`
+
+const LogoContainer = styled.div`
+  height: 100%;
+`
+
+const Logo = styled.img`
+  height: 100%;
 `
 
 const Navbar = () => {
   return (
     <NavbarContainer>
-      <div style={{ height: '100%' }}>
+      <LogoContainer>
         <Link to='/'>
-          <img height='100%' src={marvelLogo} alt='Marvel logo' />
+          <Logo src={marvelLogo} alt='Marvel logo' />
         </Link>
-      </div>
+      </LogoContainer>
       <FavoriteCounter />
     </NavbarContainer>
   )

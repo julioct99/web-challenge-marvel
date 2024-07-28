@@ -21,12 +21,12 @@ const ComicCarousel = styled.div`
   overflow-x: auto;
 
   &::-webkit-scrollbar {
-    background-color: #f1f1f1;
+    background-color: var(--bg-color);
     height: 8px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: red;
+    background-color: var(--primary-color);
 
     &:hover {
       cursor: pointer;
