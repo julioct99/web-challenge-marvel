@@ -14,6 +14,13 @@
     0 100%,
     0 0
   );
+  --dent-clip-path-large: polygon(
+    100% 0,
+    100% calc(100% - 32px),
+    calc(100% - 32px) 100%,
+    0 100%,
+    0 0
+  );
 }
 
 html,

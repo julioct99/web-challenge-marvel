@@ -11,6 +11,7 @@ import {
   CharacterImage,
   CharacterDetailBody,
   CharacterDetailTitle,
+  CharacterDetailBackground,
 } from './styles'
 
 const CharacterDetail = () => {
@@ -30,7 +31,7 @@ const CharacterDetail = () => {
 
   return (
     <>
-      <div style={{ backgroundColor: 'black' }}>
+      <CharacterDetailBackground>
         <CharacterDetailContainer>
           <div>
             <CharacterImage
@@ -47,7 +48,7 @@ const CharacterDetail = () => {
             <p>{character.description}</p>
           </CharacterDetailBody>
         </CharacterDetailContainer>
-      </div>
+      </CharacterDetailBackground>
 
       <ComicList comics={comics} loading={comicsAreLoading} />
     </>

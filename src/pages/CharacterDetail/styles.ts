@@ -1,12 +1,18 @@
 import styled from 'styled-components'
 
+export const CharacterDetailBackground = styled.div`
+  background-color: var(--secondary-color);
+  -webkit-clip-path: var(--dent-clip-path);
+  clip-path: var(--dent-clip-path-large);
+`
+
 export const CharacterDetailContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
-  background-color: black;
-  color: white;
   max-width: 1200px;
   margin: 0 auto;
+  color: var(--text-color-light);
+  background: transparent;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;

@@ -12,7 +12,7 @@ export const CardContainer = styled.div`
 export const CardBody = styled.div`
   -webkit-clip-path: var(--dent-clip-path);
   clip-path: var(--dent-clip-path);
-  background: var(--secondary-color);
+  background-color: var(--secondary-color);
   color: var(--text-color-light);
   height: 64px;
   font-size: 14px;
