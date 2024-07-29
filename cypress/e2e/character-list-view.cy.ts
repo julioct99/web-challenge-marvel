@@ -11,32 +11,25 @@ describe('Character list view', () => {
         fixture: 'characters-search.json',
       }
     ).as('getCharactersWithSearch')
-  })
 
-  it('loads', () => {
     cy.visit('http://localhost:5173/')
+    cy.wait('@getCharacters')
   })
 
   it('shows the list of characters', () => {
-    cy.visit('http://localhost:5173/')
-    cy.wait('@getCharacters')
-
     cy.getBySel('character-list').should('exist')
+    cy.getBySel('character-list').children().should('have.length', 20)
   })
 
   it('can add a character to favorites', () => {
-    cy.visit('http://localhost:5173/')
-    cy.wait('@getCharacters')
-
     cy.getBySel('favorite-characters-counter').should('contain', '0')
     cy.getBySel('favorite-button').first().click()
     cy.getBySel('favorite-characters-counter').should('contain', '1')
+    cy.getBySel('favorite-button').first().click()
+    cy.getBySel('favorite-characters-counter').should('contain', '0')
   })
 
   it('can search for characters', () => {
-    cy.visit('http://localhost:5173/')
-    cy.wait('@getCharacters')
-
     cy.getBySel('searchbar').type('spider')
     cy.getBySel('searchbar').type('{enter}')
     cy.wait('@getCharactersWithSearch')

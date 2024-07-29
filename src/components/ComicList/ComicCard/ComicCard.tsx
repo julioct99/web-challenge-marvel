@@ -1,5 +1,5 @@
-import { Comic } from '../../../shared/types/marvel-api'
 import { CardBody } from './styles'
+import { Comic } from '../../../shared/types/marvel-api'
 
 interface ComicProps {
   comic: Comic
@@ -14,15 +14,15 @@ const ComicCard: React.FunctionComponent<ComicProps> = ({ comic }) => {
   }
 
   return (
-    <div>
+    <div data-cy='comic-card'>
       <img
         width={200}
         src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
         alt={comic.title}
       />
       <CardBody>
-        <strong>{comic.title}</strong>
-        <small>{getReleaseYear()}</small>
+        <strong data-cy='comic-title'>{comic.title}</strong>
+        <small data-cy='comic-year'>{getReleaseYear()}</small>
       </CardBody>
     </div>
   )
