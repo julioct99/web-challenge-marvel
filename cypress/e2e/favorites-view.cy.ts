@@ -4,8 +4,7 @@ describe('Favorites view', () => {
       fixture: 'characters.json',
     }).as('getCharacters')
 
-    cy.visit('http://localhost:5173/')
-    cy.wait('@getCharacters')
+    cy.visit('http://localhost:5173/').wait('@getCharacters')
 
     cy.getBySel('favorite-characters-counter').should('have.text', '0')
     cy.getBySel('favorite-button').first().click()
@@ -18,8 +17,7 @@ describe('Favorites view', () => {
   })
 
   it('can search for favorite characters', () => {
-    cy.getBySel('searchbar').type('bomb')
-    cy.getBySel('searchbar').type('{enter}')
+    cy.getBySel('searchbar').type('bomb').type('{enter}')
     cy.getBySel('character-list').should('exist').children().should('have.length', 1)
     cy.getBySel('character-name').should('contain', 'Bomb')
   })

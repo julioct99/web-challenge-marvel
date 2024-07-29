@@ -12,12 +12,10 @@ describe('Character detail view', () => {
       fixture: 'comics.json',
     }).as('getComics')
 
-    cy.visit('http://localhost:5173/')
-    cy.wait('@getCharacters')
+    cy.visit('http://localhost:5173/').wait('@getCharacters')
 
     cy.getBySel('character-card').first().click()
-    cy.wait('@getCharacter')
-    cy.wait('@getComics')
+    cy.wait('@getCharacter').wait('@getComics')
   })
 
   it('shows the character details', () => {

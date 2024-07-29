@@ -12,13 +12,11 @@ describe('Character list view', () => {
       }
     ).as('getCharactersWithSearch')
 
-    cy.visit('http://localhost:5173/')
-    cy.wait('@getCharacters')
+    cy.visit('http://localhost:5173/').wait('@getCharacters')
   })
 
   it('shows the list of characters', () => {
-    cy.getBySel('character-list').should('exist')
-    cy.getBySel('character-list').children().should('have.length', 20)
+    cy.getBySel('character-list').should('exist').children().should('have.length', 20)
   })
 
   it('can add a character to favorites', () => {
@@ -30,8 +28,7 @@ describe('Character list view', () => {
   })
 
   it('can search for characters', () => {
-    cy.getBySel('searchbar').type('spider')
-    cy.getBySel('searchbar').type('{enter}')
+    cy.getBySel('searchbar').type('spider').type('{enter}')
     cy.wait('@getCharactersWithSearch')
 
     cy.getBySel('character-list').should('exist')
