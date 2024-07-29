@@ -1,11 +1,9 @@
-import { useContext } from 'react'
-
+import { ButtonContainer } from './styles'
+import { Character } from '../../shared/types/marvel-api'
+import { FavoriteCharactersContext } from '../../context/favorite-characters'
 import Heart from '../../shared/icons/heart'
 import HeartEmpty from '../../shared/icons/heart-empty'
-
-import { FavoriteCharactersContext } from '../../context/favorite-characters'
-import { Character } from '../../shared/types/marvel-api'
-import { ButtonContainer } from './styles'
+import { useContext } from 'react'
 
 interface CharacterFavoriteButtonProps {
   character: Character
@@ -29,7 +27,11 @@ const CharacterFavoriteButton: React.FunctionComponent<CharacterFavoriteButtonPr
   }
 
   return (
-    <ButtonContainer onClick={handleClick} className='favorite-button'>
+    <ButtonContainer
+      onClick={handleClick}
+      className='favorite-button'
+      data-cy='favorite-button'
+    >
       {isFavorite ? <Heart size={size} /> : <HeartEmpty size={size} />}
     </ButtonContainer>
   )

@@ -1,7 +1,6 @@
+import { Character } from '../../../shared/types/marvel-api'
 import ResultCountDisplay from '../../../shared/components/ResultCountDisplay'
 import Searchbar from '../../../shared/components/Searchbar'
-
-import { Character } from '../../../shared/types/marvel-api'
 import { SectionContainer } from './styles'
 
 interface CharacterSearchProps {

@@ -1,9 +1,8 @@
+import { Character } from '../../shared/types/marvel-api'
+import CharacterCard from '../CharacterCard'
 import CharacterSearch from './CharacterSearch'
 import Grid from '../../layout/Grid'
 import Loading from '../../shared/components/Loading'
-import CharacterCard from '../CharacterCard'
-
-import { Character } from '../../shared/types/marvel-api'
 
 interface CharacterListProps {
   characters: Character[]
@@ -20,7 +19,7 @@ const CharacterList: React.FunctionComponent<CharacterListProps> = ({
     if (loading) return <Loading />
 
     return (
-      <Grid>
+      <Grid data-cy='character-list'>
         {characters.map((character) => (
           <CharacterCard key={character.id} character={character} />
         ))}

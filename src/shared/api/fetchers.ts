@@ -1,4 +1,5 @@
 import { CharacterQueryParams, MarvelApiResponse } from '../types/marvel-api'
+
 import { API } from './settings'
 
 const getQueryParams = (params: CharacterQueryParams = {}): string => {
@@ -19,7 +20,7 @@ export const fetchCharacters = async (
 ): Promise<MarvelApiResponse> => {
   const url = `${API.BASE_URL}/characters?${getQueryParams({
     ...params,
-    limit: '50',
+    limit: '4',
     orderBy: 'modified',
   })}`
   const response = await fetch(url)

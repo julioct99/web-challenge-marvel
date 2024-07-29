@@ -1,12 +1,12 @@
 import { GridContainer, GridItem } from './styles'
 
-interface GridProps {
+interface GridProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode[]
 }
 
-const Grid: React.FunctionComponent<GridProps> = ({ children }) => {
+const Grid: React.FunctionComponent<GridProps> = ({ children, ...props }) => {
   return (
-    <GridContainer>
+    <GridContainer {...props}>
       {children.map((item, index) => (
         <GridItem key={index}>{item}</GridItem>
       ))}

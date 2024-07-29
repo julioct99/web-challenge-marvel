@@ -1,8 +1,7 @@
-import { useRef } from 'react'
-
 import { SearchContainer, SearchIcon, SearchInput } from './styles'
 
 import searchIcon from '/search_icon.png'
+import { useRef } from 'react'
 
 interface SearchbarProps {
   onSearch: (searchText: string) => void
@@ -28,7 +27,7 @@ const Searchbar: React.FunctionComponent<SearchbarProps> = ({
   }
 
   return (
-    <SearchContainer>
+    <SearchContainer data-cy='searchbar'>
       <SearchIcon>
         <img src={searchIcon} alt='Search icon' />
       </SearchIcon>

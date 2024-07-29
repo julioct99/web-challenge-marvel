@@ -1,14 +1,14 @@
-import CharacterFavoriteButton from '../CharacterFavoriteButton'
+import {
+  BodyBackgroundContainer,
+  CardBody,
+  CardContainer,
+  CardLink,
+  NameContainer,
+  Thumbnail,
+} from './styles'
 
 import { Character } from '../../shared/types/marvel-api'
-import {
-  CardLink,
-  CardContainer,
-  Thumbnail,
-  CardBody,
-  BodyBackgroundContainer,
-  NameContainer,
-} from './styles'
+import CharacterFavoriteButton from '../CharacterFavoriteButton'
 
 interface CharacterCardProps {
   character: Character
@@ -25,7 +25,7 @@ const CharacterCard: React.FunctionComponent<CharacterCardProps> = ({ character 
         <CardBody>
           <BodyBackgroundContainer>
             <NameContainer>
-              <span>{character.name}</span>
+              <span data-cy='character-name'>{character.name}</span>
               <CharacterFavoriteButton size={14} character={character} />
             </NameContainer>
           </BodyBackgroundContainer>
