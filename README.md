@@ -81,7 +81,7 @@ eslint is configured in Vite by default. You can run the linter with the followi
 npm run lint
 ```
 
-Prettier is also configured in the project. You can run the formatter with the following command:
+Prettier is also configured in the project. You can run the formatter with the following commands:
 
 1. Format all files:
 
