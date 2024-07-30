@@ -21,7 +21,7 @@ const CharacterCard: React.FunctionComponent<CharacterCardProps> = ({ character 
   return (
     <CardLink to={`/characters/${character.id}`} data-cy='character-card'>
       <CardContainer className='card-container'>
-        <Thumbnail src={thumbnail} alt={character.name} />
+        <Thumbnail src={thumbnail} alt={`Image of the character ${character.name}`} />
         <CardBody>
           <BodyBackgroundContainer>
             <NameContainer>

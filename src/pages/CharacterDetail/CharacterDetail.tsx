@@ -29,28 +29,29 @@ const CharacterDetail = () => {
   }
 
   return (
-    <section data-cy='character-detail'>
-      <CharacterDetailBackground>
-        <CharacterDetailContainer>
-          <div>
+    <main>
+      <section data-cy='character-detail'>
+        <CharacterDetailBackground>
+          <CharacterDetailContainer>
             <CharacterImage
               className='character-image'
               src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
-              alt={character.name}
+              alt={`Image of the character ${character.name}`}
             />
-          </div>
-          <CharacterDetailBody>
-            <CharacterDetailTitle>
-              <h1 data-cy='character-name'>{character.name}</h1>
-              <CharacterFavoriteButton character={character} size={32} />
-            </CharacterDetailTitle>
-            <p data-cy='character-description'>{character.description}</p>
-          </CharacterDetailBody>
-        </CharacterDetailContainer>
-      </CharacterDetailBackground>
-
-      <ComicList comics={comics} loading={comicsAreLoading} />
-    </section>
+            <CharacterDetailBody>
+              <CharacterDetailTitle>
+                <h1 data-cy='character-name'>{character.name}</h1>
+                <CharacterFavoriteButton character={character} size={32} />
+              </CharacterDetailTitle>
+              <p data-cy='character-description'>{character.description}</p>
+            </CharacterDetailBody>
+          </CharacterDetailContainer>
+        </CharacterDetailBackground>
+      </section>
+      <section>
+        <ComicList comics={comics} loading={comicsAreLoading} />
+      </section>
+    </main>
   )
 }
 

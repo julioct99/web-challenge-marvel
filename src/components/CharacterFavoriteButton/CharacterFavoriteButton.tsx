@@ -31,6 +31,7 @@ const CharacterFavoriteButton: React.FunctionComponent<CharacterFavoriteButtonPr
       onClick={handleClick}
       className='favorite-button'
       data-cy='favorite-button'
+      aria-label='Toggle favorite character'
     >
       {isFavorite ? <Heart size={size} /> : <HeartEmpty size={size} />}
     </ButtonContainer>

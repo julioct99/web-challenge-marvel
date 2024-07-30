@@ -18,7 +18,7 @@ const ComicCard: React.FunctionComponent<ComicProps> = ({ comic }) => {
       <img
         width={200}
         src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
-        alt={comic.title}
+        alt={`${comic.title} comic cover`}
       />
       <CardBody>
         <strong data-cy='comic-title'>{comic.title}</strong>
