@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const SearchContainer = styled.div`
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--secondary-color);
   width: 100%;
   padding-bottom: 5px;
 `
