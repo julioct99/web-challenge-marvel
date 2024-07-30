@@ -16,7 +16,7 @@ const getQueryParams = (params: CharacterQueryParams = {}): string => {
 }
 
 export const fetchCharacters = async (
-  params: CharacterQueryParams = {}
+  params: CharacterQueryParams = {},
 ): Promise<MarvelApiResponse> => {
   const url = `${API.BASE_URL}/characters?${getQueryParams({
     ...params,

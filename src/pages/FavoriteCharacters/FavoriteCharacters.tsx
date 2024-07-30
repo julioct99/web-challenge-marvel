@@ -12,7 +12,7 @@ const FavoriteCharacters = () => {
 
   const getFilteredCharacters = () => {
     return favoriteCharacters.filter((character) =>
-      character.name.toLowerCase().includes(searchText.toLowerCase())
+      character.name.toLowerCase().includes(searchText.toLowerCase()),
     )
   }
 

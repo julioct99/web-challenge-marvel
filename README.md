@@ -2,17 +2,11 @@
 
 ## Setup and commands
 
-1. Install dependencies
+Install dependencies
 
-   ```bash
-   npm install
-   ```
-
-2. Run the project
-
-   ```bash
-   npm run dev
-   ```
+```bash
+npm install
+```
 
 ### Dev mode
 
@@ -74,13 +68,26 @@ The project is built with Vite and React. The folder structure is as follows:
     - `icons`: SVG icons turned into React components.
     - `types`: Typescript types and interfaces for the project and API.
 
-## Linting
+## Linting and formatting
 
 eslint is configured in Vite by default. You can run the linter with the following command:
 
 ```bash
 npm run lint
 ```
+
+Prettier is also configured in the project. You can run the formatter with the following command:
+
+1. Format all files:
+
+   ```bash
+   npm run format
+   ```
+
+2. Check formatting rules:
+   ```bash
+   npm run prettier:check
+   ```
 
 ## Libraries used
 
