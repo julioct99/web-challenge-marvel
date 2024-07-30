@@ -1,30 +1,92 @@
-# React + TypeScript + Vite
+# Marvel Web Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Setup and commands
 
-Currently, two official plugins are available:
+1. Install dependencies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+   ```bash
+   npm install
+   ```
 
-## Expanding the ESLint configuration
+2. Run the project
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+   ```bash
+   npm run dev
+   ```
 
-- Configure the top-level `parserOptions` property like this:
+### Dev mode
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1.  Run the project
+
+    ```bash
+    npm run dev
+    ```
+
+2.  Open the browser at http://localhost:5173/
+
+### Production preview mode
+
+1. Build the project
+
+   ```bash
+   npm run build
+   ```
+
+2. Run the project
+
+   ```bash
+   npm run preview
+   ```
+
+3. Open the browser at http://localhost:4173/
+
+### Tests
+
+End-to-end tests are implemented with Cypress. All the code and configuration can be found inside the `cypress` folder.
+
+**Important note**: The tests run on the development server. Make sure to run the project in dev mode before running the tests.
+
+1. Run the tests
+
+   ```bash
+   npm run test
+   ```
+
+   or use Docker
+
+   ```bash
+   npm run test-docker
+   ```
+
+## Architecture and folder structure
+
+The project is built with Vite and React. The folder structure is as follows:
+
+- `src`: Contains the source code of the project.
+  - `components`: All the components of the project.
+  - `context`: React Context providers.
+  - `layout`: Layout components of the project.
+  - `pages`: Pages of the project.
+  - `shared`: Shared code.
+    - `api`: API configuration and fetch functions.
+    - `components`: Shared components.
+    - `hooks`: Custom hooks.
+    - `icons`: SVG icons turned into React components.
+    - `types`: Typescript types and interfaces for the project and API.
+
+## Linting
+
+eslint is configured in Vite by default. You can run the linter with the following command:
+
+```bash
+npm run lint
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Libraries used
+
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [Cypress](https://www.cypress.io/)
+- [Styled Components](https://styled-components.com/)
+- [Axios](https://axios-http.com/)
