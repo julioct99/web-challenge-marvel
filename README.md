@@ -1,5 +1,8 @@
 # Marvel Web Challenge
 
+**Note: In the recent days, the marvel developer API has been much slower than usual. This will affect all data loading times in the app.**
+See: https://www.reddit.com/r/MarvelUnlimited/comments/1eb5ey4/has_anyone_else_noticed_extremely_slow_response/
+
 ## Setup and commands
 
 Install dependencies
@@ -52,6 +55,8 @@ End-to-end tests are implemented with Cypress. All the code and configuration ca
    npm run test-docker
    ```
 
+**Due to the slow response times of the Marvel API, the Cypress test suite uses interceptors and fixtures for HTTP requests.**
+
 ## Architecture and folder structure
 
 The project is built with Vite and React. The folder structure is as follows:
@@ -97,3 +102,7 @@ Prettier is also configured in the project. You can run the formatter with the f
 - [Cypress](https://www.cypress.io/)
 - [Styled Components](https://styled-components.com/)
 - [Axios](https://axios-http.com/)
+
+## Deployment
+
+The project is deployed automatically to https://julio-marvel.netlify.app/ using Netlify.
