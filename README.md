@@ -59,7 +59,7 @@ End-to-end tests are implemented with Cypress. All the code and configuration ca
 
 ## Architecture and folder structure
 
-The project is built with Vite and React. The folder structure is as follows:
+The project is built with Vite and React as a SPA. The folder structure is as follows:
 
 - `src`: Contains the source code of the project.
   - `components`: All the components of the project.
