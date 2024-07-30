@@ -82,6 +82,16 @@ The project is built with Vite and React as a **SPA**.
 The favorite characters feature is implemented using React Context, and the data is persisted to the browser via `localStorage`.
 See the `src/context/favorite-characters.tsx` file for the implementation.
 
+### Styling
+
+The project uses `styled-components` for styling. Every component has it's own `styles.ts` file where the styles are defined.
+
+The global CSS file (which includes **CSS variables** and global styles) can be found in `src/index.css`.
+
+### Routing
+
+The project uses `react-router-dom` for routing. The routes and pages are defined in the `src/App.tsx` file.
+
 ## Linting and formatting
 
 eslint is configured in Vite by default. You can run the linter with the following command:

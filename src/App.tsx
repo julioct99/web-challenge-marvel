@@ -1,8 +1,8 @@
+import { CharacterDetail, Characters, FavoriteCharacters, NotFound } from './pages'
 import { Route, Routes } from 'react-router-dom'
 
 import ContextProviders from './components/ContextProviders'
 import PageLayout from './layout/PageLayout'
-import { CharacterDetail, Characters, FavoriteCharacters } from './pages'
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
           <Route path='/' element={<Characters />} />
           <Route path='/characters/:id' element={<CharacterDetail />} />
           <Route path='/favorites' element={<FavoriteCharacters />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </PageLayout>
     </ContextProviders>
