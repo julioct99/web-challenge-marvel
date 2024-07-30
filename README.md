@@ -1,5 +1,7 @@
 # Marvel Web Challenge
 
+Author: Julio Casallo Tamayo
+
 **Note: In the recent days, the marvel developer API has been much slower than usual. This will affect all data loading times in the app.**
 See: https://www.reddit.com/r/MarvelUnlimited/comments/1eb5ey4/has_anyone_else_noticed_extremely_slow_response/
 
@@ -57,9 +59,11 @@ End-to-end tests are implemented with Cypress. All the code and configuration ca
 
 **Due to the slow response times of the Marvel API, the Cypress test suite uses interceptors and fixtures for HTTP requests.**
 
-## Architecture and folder structure
+## Architecture and implementation
 
-The project is built with Vite and React as a SPA. The folder structure is as follows:
+The project is built with Vite and React as a **SPA**.
+
+### Folder structure
 
 - `src`: Contains the source code of the project.
   - `components`: All the components of the project.
@@ -72,6 +76,11 @@ The project is built with Vite and React as a SPA. The folder structure is as fo
     - `hooks`: Custom hooks.
     - `icons`: SVG icons turned into React components.
     - `types`: Typescript types and interfaces for the project and API.
+
+### Favorites feature
+
+The favorite characters feature is implemented using React Context, and the data is persisted to the browser via `localStorage`.
+See the `src/context/favorite-characters.tsx` file for the implementation.
 
 ## Linting and formatting
 
@@ -106,3 +115,7 @@ Prettier is also configured in the project. You can run the formatter with the f
 ## Deployment
 
 The project is deployed automatically to https://julio-marvel.netlify.app/ using Netlify.
+
+## Misc. notes
+
+1. To search, press `ENTER` after typing in the searchbar.
