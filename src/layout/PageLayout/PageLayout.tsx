@@ -6,10 +6,10 @@ interface PageLayoutProps {
 
 const PageLayout: React.FunctionComponent<PageLayoutProps> = ({ children }) => {
   return (
-    <div>
+    <>
       <Navbar />
       {children}
-    </div>
+    </>
   )
 }
 
