@@ -8,7 +8,7 @@ export const useComics = (characterId: number | null) => {
   useEffect(() => {
     if (!characterId) return
     loadComics(characterId)
-  }, [characterId])
+  }, [characterId, loadComics])
 
   return { comics, loading, loadComics, ...rest }
 }

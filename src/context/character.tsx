@@ -1,4 +1,5 @@
-import { createContext, useState, ReactNode, FunctionComponent } from 'react'
+import { FunctionComponent, ReactNode, createContext, useCallback, useState } from 'react'
+
 import { Character } from '../shared/types/marvel-api'
 import { fetchCharacter } from '../shared/api/fetchers'
 
@@ -26,7 +27,7 @@ const CharacterContextProvider: FunctionComponent<CharacterContextProviderProps>
   const [character, setCharacter] = useState<Character | null>(null)
   const [loading, setLoading] = useState(false)
 
-  const loadCharacter = async (characterId: number) => {
+  const loadCharacter = useCallback(async (characterId: number) => {
     setLoading(true)
 
     try {
@@ -36,7 +37,7 @@ const CharacterContextProvider: FunctionComponent<CharacterContextProviderProps>
     } finally {
       setLoading(false)
     }
-  }
+  }, [])
 
   const getContextValue = (): CharacterContextType => ({
     character,

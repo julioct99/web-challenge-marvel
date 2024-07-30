@@ -7,7 +7,7 @@ export const useCharacters = () => {
 
   useEffect(() => {
     loadCharacters({})
-  }, [])
+  }, [loadCharacters])
 
   return { characters, loadCharacters, loading, ...rest }
 }
